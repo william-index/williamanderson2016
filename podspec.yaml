@@ -1,0 +1,41 @@
+grow_version: ">=0.0.55"
+title@: Grow SDK Codelab
+description@: "The codelab pod for the Grow SDK. Used in conjunction with the codelab at http://growsdk.org."
+
+error_routes:
+  default: /views/errors/default.html
+
+localization:
+  default_locale: en
+  locales:
+  - de
+  - en
+  - ja
+  - zh
+
+static_dirs:
+- static_dir: /dist/
+  serve_at: /static/css/
+- static_dir: /source/fonts/
+  serve_at: /static/fonts/
+- static_dir: /source/images/
+  serve_at: /static/images/
+
+preprocessors:
+- kind: sass
+  sass_dir: /source/sass/
+  out_dir: /dist/
+
+deployments:
+  default:
+    destination: local
+    out_dir: my-codelab-launch/
+  gcs:
+    destination: gcs
+    bucket: mybucket.example.com
+  s3:
+    destination: s3
+    bucket: mybucket.example.com
+  sandbox:
+    destination: gcs
+    bucket: sandbox.growlaunches.com

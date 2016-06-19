@@ -1,0 +1,9 @@
+{% extends "/views/base.html" %}
+
+{% block main %}
+  {% set foo = g.yaml('/content/projects.yaml') %}
+  {% for post in foo.projects %}
+   <img src="/static/images/project_covers/{{post.image}}" />
+   {{post.title}}
+  {% endfor %}
+{% endblock %}
