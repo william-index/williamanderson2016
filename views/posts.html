@@ -7,7 +7,9 @@
       {{_('Posted %(date)s', date=doc.dates('published'))}}
     </div>
   </div>
-  {{doc.html|safe}}
+  <article class='blog_post'>
+    <section>{{doc.html|safe}}</section>
+  </article>
   <div class="meta-alt">
     {% set next_doc = doc.next() %}
     {% set prev_doc = doc.prev() %}

@@ -23,6 +23,10 @@ preprocessors:
   sass_dir: /source/sass/
   out_dir: /dist/
 
+extensions:
+  jinja2:
+  - extensions.datetimeformat.Datetimeformat
+
 deployments:
   default:
     destination: local

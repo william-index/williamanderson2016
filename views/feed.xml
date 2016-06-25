@@ -1,0 +1,27 @@
+{% set all_projects = g.yaml('/content/projects.yaml') %}
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>William Anderson</title>
+  <subtitle>Projects and Posts</subtitle>
+  <id>http://williamanderson.io/index.html</id>
+  <link href="http://williamanderson.io/index.html"/>
+  <link href="http://williamanderson.io/feed.xml" rel="self"/>
+  <updated>{{'now'|datetimenow}}</updated>
+  <author>
+    <name>William Anderson</name>
+  </author>
+  {% for post in all_projects.projects %}
+  <entry>
+    <title>{{post.title}}</title>
+    <link rel="alternate" href="{{post.url}}"/>
+    <id>{{post.url}}</id>
+    <published>{{post.machine_date|datetimeformat}}</published>
+    <updated>{{post.machine_date|datetimeformat}}</updated>
+    <author>
+      <name>William Anderson</name>
+    </author>
+    <summary type="html">{{post.summary}}</summary>
+    <content type="html">{{post.title}} {{post.url}}</content>
+  </entry>
+  {% endfor %}
+</feed>

@@ -1,12 +1,14 @@
 @import "includes/reset";
 @import "libraries/bourbon/bourbon";
 @import "libraries/neat/neat";
+@import "libraries/pygments-github";
 
 @import "settings/colors";
 @import "settings/layout";
 @import "settings/typography";
 
 @import "modules/feature-card";
+@import "pages/blog-post";
 
 * {
   box-sizing: border-box;

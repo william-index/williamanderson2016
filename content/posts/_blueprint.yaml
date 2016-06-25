@@ -1,5 +1,5 @@
 title: Posts
-path: /posts/{slug}/
+path: /blog/{slug}/
 view: /views/posts.html
 
 localization:
