@@ -1,0 +1,12 @@
+{% macro feature_card(post, first_card, count) %}
+  <figure class='feature-card--{% if first_card %}primary{% else %}var{{count}}{% endif %}' {% if post.color and not first_card %}style='background:{{post.color}};'{% endif %}>
+    <a href='{{post.url}}' target='_blank'>
+      <div class='feature-card__img-wrap'>
+        <img src='/static/images/project_covers/{{post.image}}' class='feature-card__img'/>
+      </div>
+      <figcaption class='feature-card__caption'>
+        {{post.title}}
+      </figcaption>
+    </a>
+  </figure>
+{% endmacro %}

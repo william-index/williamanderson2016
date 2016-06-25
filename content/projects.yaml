@@ -5,7 +5,6 @@ projects:
     machine_date: 2016/06/12
     url: https://soundcloud.com/bigwetdognose/004a
     summary: Song composed on a Destiny Clock, retro RPG winter town inspired.
-    home: false
 
   - title: "Wax, The Hippo - for Pico-8"
     image: waxthehippo.png
@@ -13,7 +12,8 @@ projects:
     machine_date: 2016/05/26
     url: http://www.lexaloffle.com/bbs/?tid=3461
     summary: 8-bit platformer written in Lua for Pico-8
-    home: true
+    color: rgb(0, 0, 102)
+    featured: true
 
   - title: "Random Wizard Generator"
     image: wizardgenerator.png
@@ -21,7 +21,8 @@ projects:
     machine_date: 2016/04/09
     url: https://twitter.com/wizardgenerator
     summary: Python-based twitter bot that generates random wizard with color replacement as image patterns.
-    home: true
+    color: rgba(204, 0, 153, .9)
+    featured: true
 
   - title: "Fantastic Real Estate Bot"
     image: fantasticrealestate.png
@@ -29,7 +30,6 @@ projects:
     machine_date: 2016/04/02
     url: https://twitter.com/FantasyListings
     summary: Python-based twitter bot that makes fake and fantastic real estate listings.
-    home: false
 
   - title: "CSS Dragon Radar"
     image: dragonradar.jpg
@@ -37,15 +37,16 @@ projects:
     machine_date: 2016/03/12
     url: http://codepen.io/william-index/full/PNGqyN/
     summary: Dragon Radar from Dragon Ball anime series. CSS Only.
-    home: false
+    color: rgba(0, 107, 179, .8)
+    featured: true
 
   - title: "Microservices All the Way Down"
     image: microservices.png
     date: 02/15/2016
     machine_date: 2016/02/15
     url: http://williamanderson.io/blog/microservices-all-the-way-down.html
+    blog: true
     summary: The Microservices pattern is intensely popular right now in software development, but in other fields it always has been. In a way its even been around in software for longer than we think too.
-    home: false
 
   - title: "Personal Mascot (5 color)"
     image: mascotchara.png
@@ -53,7 +54,6 @@ projects:
     machine_date: 2016/01/30
     url: http://thewa.tumblr.com/post/138323546238/ive-been-wanting-to-make-myself-a-mascot
     summary: I've been wanting to make myself a mascot character along these lines for a while. Been playing a lot of Kirby's Dreamland lately, and the oldschool Gameboy colors were inspiring, so I decided to step up and make this. Its me! Check out that patterned shirt! Its a hippo type thing?
-    home: false
 
   - title: "Vapor Vase (CSS Art)"
     image: vaporvase.png
@@ -61,7 +61,6 @@ projects:
     machine_date: 2016/01/23
     url: http://codepen.io/william-index/pen/zrRWWP
     summary: Im not 100% why or what, I just let the style take me wherever they lead me, and this is where I landed. CSS can be a medium for art just as much as anything else.
-    home: false
 
   - title: "Exobotany in Pixels"
     image: exobotany_pixelart.png
@@ -69,15 +68,14 @@ projects:
     machine_date: 2016/01/18
     url: http://thewa.tumblr.com/post/137574290383/weekend-micro-project-just-for-fun
     summary: Plants from the furthest reaches of retro blacklight-pixel space.
-    home: false
 
   - title: "2015 Year in Review"
     image: yir2015.png
     date: 01/10/2016
     machine_date: 2016/01/10
     url: http://williamanderson.io/blog/year-in-review-2015.html
+    blog: true
     summary: My look back at what I did during 2015.
-    home: false
 
   - title: "Sass Maze Algorithms 2"
     image: mazealgos2.jpg
@@ -85,7 +83,6 @@ projects:
     machine_date: 2015/12/12
     url: http://codepen.io/william-index/pen/qbONZE
     summary: A radial maze generated with Sass and css only.
-    home: false
 
   - title: "Sass Maze Algorithms"
     image: mazealgos.jpg
@@ -93,7 +90,8 @@ projects:
     machine_date: 2015/12/06
     url: http://codepen.io/william-index/pen/YwzjPr?editors=110
     summary: The first 2 maze algorithms from "Mazes for Programmers" reworked to be in sass and css.
-    home: true
+    color: rgba(179, 36, 0, .9)
+    featured: true
 
   - title: "Swarming Fungi"
     image: swarmingfungi.jpg
@@ -101,7 +99,6 @@ projects:
     machine_date: 2015/11/15
     url: http://codepen.io/william-index/pen/meaYXr
     summary: A CSS experiment for swarming particle based on mouse position with random variation.
-    home: false
 
   - title: "Start '98"
     image: start98.jpg
@@ -109,7 +106,6 @@ projects:
     machine_date: 2015/11/08
     url: http://thewa.tumblr.com/post/132830546243/my-first-real-painting-kinda-titled-start-98
     summary: My first real painting so to speak, acrylic on wood with paper mache and shadows.
-    home: false
 
   - title: "Halloween Pens 2015"
     image: halloweenpens2015.jpg
@@ -117,7 +113,6 @@ projects:
     machine_date: 2015/10/31
     url: http://codepen.io/collection/DxKkkg/
     summary: Just some quick CSS doodles on halloween.
-    home: false
 
   - title: "90s Space Suit - Therapy"
     image: nintiesspacesuit.jpg
@@ -125,48 +120,48 @@ projects:
     machine_date: 2015/10/24
     url: https://hipponautic.bandcamp.com/album/90s-space-suit
     summary: My first try ever at music. Made with garageband and samples from a 1980s self-hypnosis video.
-    home: false
 
   - title: "Blogpost: Logic and State Management with just CSS"
     image: css_logic.jpg
     date: 10/17/2015
     machine_date: 2015/10/17
     url: http://williamanderson.io/blog/logic-and-states-with-css.html
-    home: false
+    blog: true
 
   - title: "CSS-only Calculator"
     image: halfbyteadder.gif
     date: 10/10/2015
     machine_date: 2015/10/10
     url: http://codepen.io/william-index/pen/jbwggX
-    home: true
+    color: rgba(61, 160, 169, .8)
+    featured: true
 
   - title: "Qorxon: Cruise Control"
     image: qorxon.jpg
     date: 10/04/2015
     machine_date: 2015/10/04
     url: http://codepen.io/william-index/pen/qOrXON/
-    home: true
+    color: rgba(255, 255, 0, .7)
+    featured: true
 
   - title: "HTML to Audio Converter"
     image: html2audio.jpg
     date: 09/06/2015
     machine_date: 2015/09/06
     url: http://codepen.io/william-index/full/jbEpeK/
-    home: false
 
   - title: "Speaking to Machines"
     image: machinecode.jpg
     date: 08/28/2015
     machine_date: 2015/08/28
     url: http://williamanderson.io/blog/speaking-to-machines.html
+    blog: true
 
   - title: "CSS-only Connect 4"
     image: connect4.png
     date: 08/22/2015
     machine_date: 2015/08/22
     url: http://codepen.io/william-index/full/waLLzY/
-    home: false
 
   - title: "Callie Splatoon Fanart"
     image: callie_splatoon.png
@@ -191,4 +186,3 @@ projects:
     date: 07/19/2015
     machine_date: 2015/07/19
     url: http://codepen.io/william-index/pen/pJZpgN
-    home: false

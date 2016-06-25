@@ -1,3 +1,14 @@
+@import "includes/reset";
+
+@import "settings/colors";
+@import "settings/layout";
+
+@import "modules/feature-card";
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #efefef;
 }

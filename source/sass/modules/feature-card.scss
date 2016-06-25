@@ -1,0 +1,110 @@
+$feature-card-padding: 10px;
+
+.feature-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+%feature-card {
+  display: block;
+  overflow: hidden;
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  padding: $feature-card-padding;
+
+  &:hover .feature-card__img{
+    transform: scale(1.2, 1.2) translate(-40%, -40%);
+  }
+}
+
+.feature-card--primary {
+  @extend %feature-card;
+  background: $pattern-brand-primary;
+  width: 100vw;
+  padding: $feature-card-padding;
+  border-top: 10px solid $color-brand-copy;
+  border-bottom: 10px solid $color-brand-copy;
+}
+
+.feature-card--var0,
+.feature-card--var3 {
+  @extend %feature-card;
+  max-width: $max-width/2;
+  max-height: $max-width/2;
+}
+
+.feature-card--var1 {
+  @extend %feature-card;
+  background: gold;
+  max-width: $max-width/2;
+  max-height: $max-width/2;
+}
+
+.feature-card--var2 {
+  @extend %feature-card;
+  background: gold;
+  max-width: $max-width/2;
+  max-height: $max-width/2;
+}
+
+.feature-card__img-wrap {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .feature-card--primary & {
+    margin: 2% 0 0 2%;
+    width: 75%;
+    height: 80%;
+  }
+}
+
+.feature-card__img {
+  height: 100%;
+  left: 50%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .3s;
+}
+
+.feature-card__caption {
+  background: $color-brand-dark;
+  position: absolute;
+
+  .feature-card--primary & {
+    width: 60%;
+    height: 30%;
+    bottom: 5%;
+    right: 3%;
+  }
+
+  .feature-card--var1 &,
+  .feature-card--var2 & {
+    width: 60%;
+    height: 35%;
+  }
+
+  .feature-card--var1 & {
+    bottom: $feature-card-padding;
+    left: $feature-card-padding;
+  }
+
+  .feature-card--var2 & {
+    bottom: $feature-card-padding;
+    right: $feature-card-padding;
+  }
+
+  .feature-card--var0 &,
+  .feature-card--var3 & {
+    bottom: $feature-card-padding;
+    height: 35%;
+    width: calc(100% - #{$feature-card-padding * 2});
+  }
+}

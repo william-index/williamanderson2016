@@ -1,9 +1,28 @@
-{% extends "/views/base.html" %}
+{% extends '/views/base.html' %}
+{% import '/views/macros/cards.html' as cards %}
 
 {% block main %}
-  {% set foo = g.yaml('/content/projects.yaml') %}
-  {% for post in foo.projects %}
-   <img src="/static/images/project_covers/{{post.image}}" />
-   {{post.title}}
+  {# Lists Featured Projects #}
+  {% set all_projects = g.yaml('/content/projects.yaml') %}
+  {% set count = 0 %}
+  {% set first_card = true %}
+  {% set feature = true %}
+
+  {% for post in all_projects.projects %}
+    {% if post.featured and feature %}
+      {% set feature = false %}
+      {{ cards.feature_card(post, true) }}
+    {% endif %}
   {% endfor %}
+
+  <section class='feature-card-wrapper'>
+    {% for post in all_projects.projects %}
+      {% if post.featured and not first_card %}
+        {{ cards.feature_card(post, first_card, count) }}
+        {% set count = (count + 1) % 4 %}
+      {% elif post.featured %}
+        {% set first_card = false %}
+      {% endif %}
+    {% endfor %}
+  </section>
 {% endblock %}

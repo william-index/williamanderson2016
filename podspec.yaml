@@ -8,10 +8,7 @@ error_routes:
 localization:
   default_locale: en
   locales:
-  - de
   - en
-  - ja
-  - zh
 
 static_dirs:
 - static_dir: /dist/
