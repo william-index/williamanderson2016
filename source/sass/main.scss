@@ -1,7 +1,10 @@
 @import "includes/reset";
+@import "libraries/bourbon/bourbon";
+@import "libraries/neat/neat";
 
 @import "settings/colors";
 @import "settings/layout";
+@import "settings/typography";
 
 @import "modules/feature-card";
 
@@ -10,5 +13,5 @@
 }
 
 body {
-  background: #efefef;
+  background: white;
 }

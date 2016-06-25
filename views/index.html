@@ -4,24 +4,17 @@
 {% block main %}
   {# Lists Featured Projects #}
   {% set all_projects = g.yaml('/content/projects.yaml') %}
-  {% set count = 0 %}
-  {% set first_card = true %}
-  {% set feature = true %}
-
-  {% for post in all_projects.projects %}
-    {% if post.featured and feature %}
-      {% set feature = false %}
-      {{ cards.feature_card(post, true) }}
-    {% endif %}
-  {% endfor %}
 
   <section class='feature-card-wrapper'>
     {% for post in all_projects.projects %}
-      {% if post.featured and not first_card %}
-        {{ cards.feature_card(post, first_card, count) }}
-        {% set count = (count + 1) % 4 %}
-      {% elif post.featured %}
-        {% set first_card = false %}
+      {% if post.featured %}
+        {{ cards.feature_card(post, true) }}
+      {% endif %}
+    {% endfor %}
+
+    {% for post in all_projects.projects %}
+      {% if not post.featured and not post.subdued %}
+        {{ cards.feature_card(post) }}
       {% endif %}
     {% endfor %}
   </section>

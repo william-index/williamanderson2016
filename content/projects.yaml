@@ -1,5 +1,6 @@
 projects:
   - title: "#004 - Composed on a 'Destiny Clock'"
+    description: "P-Comp Composed Midi"
     image: 004.png
     date: 06/12/2016
     machine_date: 2016/06/12
@@ -7,24 +8,24 @@ projects:
     summary: Song composed on a Destiny Clock, retro RPG winter town inspired.
 
   - title: "Wax, The Hippo - for Pico-8"
+    description: "Platformer game built in Lua"
     image: waxthehippo.png
     date: 05/26/2016
     machine_date: 2016/05/26
     url: http://www.lexaloffle.com/bbs/?tid=3461
     summary: 8-bit platformer written in Lua for Pico-8
-    color: rgb(0, 0, 102)
-    featured: true
 
   - title: "Random Wizard Generator"
+    description: "Python Twitter bot"
     image: wizardgenerator.png
     date: 04/09/2016
     machine_date: 2016/04/09
     url: https://twitter.com/wizardgenerator
     summary: Python-based twitter bot that generates random wizard with color replacement as image patterns.
-    color: rgba(204, 0, 153, .9)
     featured: true
 
   - title: "Fantastic Real Estate Bot"
+    description: "Python Twitter bot"
     image: fantasticrealestate.png
     date: 04/02/2016
     machine_date: 2016/04/02
@@ -32,15 +33,16 @@ projects:
     summary: Python-based twitter bot that makes fake and fantastic real estate listings.
 
   - title: "CSS Dragon Radar"
+    description: "CSS illustration"
     image: dragonradar.jpg
     date: 03/12/2016
     machine_date: 2016/03/12
     url: http://codepen.io/william-index/full/PNGqyN/
     summary: Dragon Radar from Dragon Ball anime series. CSS Only.
-    color: rgba(0, 107, 179, .8)
     featured: true
 
   - title: "Microservices All the Way Down"
+    description: "Blogpost on Software Architecture"
     image: microservices.png
     date: 02/15/2016
     machine_date: 2016/02/15
@@ -49,13 +51,15 @@ projects:
     summary: The Microservices pattern is intensely popular right now in software development, but in other fields it always has been. In a way its even been around in software for longer than we think too.
 
   - title: "Personal Mascot (5 color)"
+    description: "Illustration"
     image: mascotchara.png
     date: 01/30/2016
     machine_date: 2016/01/30
     url: http://thewa.tumblr.com/post/138323546238/ive-been-wanting-to-make-myself-a-mascot
     summary: I've been wanting to make myself a mascot character along these lines for a while. Been playing a lot of Kirby's Dreamland lately, and the oldschool Gameboy colors were inspiring, so I decided to step up and make this. Its me! Check out that patterned shirt! Its a hippo type thing?
 
-  - title: "Vapor Vase (CSS Art)"
+  - title: "Vapor Vase"
+    description: "CSS Art"
     image: vaporvase.png
     date: 01/23/2016
     machine_date: 2016/01/23
@@ -63,6 +67,7 @@ projects:
     summary: Im not 100% why or what, I just let the style take me wherever they lead me, and this is where I landed. CSS can be a medium for art just as much as anything else.
 
   - title: "Exobotany in Pixels"
+    description: "Pixel Art"
     image: exobotany_pixelart.png
     date: 01/18/2016
     machine_date: 2016/01/18
@@ -70,6 +75,7 @@ projects:
     summary: Plants from the furthest reaches of retro blacklight-pixel space.
 
   - title: "2015 Year in Review"
+    description: "Blogpost"
     image: yir2015.png
     date: 01/10/2016
     machine_date: 2016/01/10
@@ -78,6 +84,7 @@ projects:
     summary: My look back at what I did during 2015.
 
   - title: "Sass Maze Algorithms 2"
+    description: "CSS experiment"
     image: mazealgos2.jpg
     date: 12/12/2015
     machine_date: 2015/12/12
@@ -85,15 +92,15 @@ projects:
     summary: A radial maze generated with Sass and css only.
 
   - title: "Sass Maze Algorithms"
+    description: "CSS experiment"
     image: mazealgos.jpg
     date: 12/06/2015
     machine_date: 2015/12/06
     url: http://codepen.io/william-index/pen/YwzjPr?editors=110
     summary: The first 2 maze algorithms from "Mazes for Programmers" reworked to be in sass and css.
-    color: rgba(179, 36, 0, .9)
-    featured: true
 
   - title: "Swarming Fungi"
+    description: "CSS experiment"
     image: swarmingfungi.jpg
     date: 11/15/2015
     machine_date: 2015/11/15
@@ -101,13 +108,22 @@ projects:
     summary: A CSS experiment for swarming particle based on mouse position with random variation.
 
   - title: "Start '98"
+    description: "Traditional painting"
     image: start98.jpg
     date: 11/08/2015
     machine_date: 2015/11/08
     url: http://thewa.tumblr.com/post/132830546243/my-first-real-painting-kinda-titled-start-98
     summary: My first real painting so to speak, acrylic on wood with paper mache and shadows.
 
+  - title: "Bat Cannon"
+    description: "iOS Game built in Swift"
+    image: batcannon.gif
+    date: 10/29/2015
+    machine_date: 2015/10/29
+    url: https://itunes.apple.com/us/app/bat-cannon/id1044096597?mt=8
+
   - title: "Halloween Pens 2015"
+    description: "CSS illustration"
     image: halloweenpens2015.jpg
     date: 10/31/2015
     machine_date: 2015/10/31
@@ -115,13 +131,15 @@ projects:
     summary: Just some quick CSS doodles on halloween.
 
   - title: "90s Space Suit - Therapy"
+    description: "Plunderphonics electronic music"
     image: nintiesspacesuit.jpg
     date: 10/24/2015
     machine_date: 2015/10/24
     url: https://hipponautic.bandcamp.com/album/90s-space-suit
     summary: My first try ever at music. Made with garageband and samples from a 1980s self-hypnosis video.
 
-  - title: "Blogpost: Logic and State Management with just CSS"
+  - title: "Logic and State Management with just CSS"
+    description: "Blogpost"
     image: css_logic.jpg
     date: 10/17/2015
     machine_date: 2015/10/17
@@ -129,28 +147,28 @@ projects:
     blog: true
 
   - title: "CSS-only Calculator"
+    description: "CSS experiment"
     image: halfbyteadder.gif
     date: 10/10/2015
     machine_date: 2015/10/10
     url: http://codepen.io/william-index/pen/jbwggX
-    color: rgba(61, 160, 169, .8)
-    featured: true
 
   - title: "Qorxon: Cruise Control"
+    description: "CSS experiment"
     image: qorxon.jpg
     date: 10/04/2015
     machine_date: 2015/10/04
     url: http://codepen.io/william-index/pen/qOrXON/
-    color: rgba(255, 255, 0, .7)
-    featured: true
 
   - title: "HTML to Audio Converter"
+    description: "Web Experiment"
     image: html2audio.jpg
     date: 09/06/2015
     machine_date: 2015/09/06
     url: http://codepen.io/william-index/full/jbEpeK/
 
   - title: "Speaking to Machines"
+    description: "Blogpost"
     image: machinecode.jpg
     date: 08/28/2015
     machine_date: 2015/08/28
@@ -158,31 +176,64 @@ projects:
     blog: true
 
   - title: "CSS-only Connect 4"
+    description: "CSS experiment"
     image: connect4.png
     date: 08/22/2015
     machine_date: 2015/08/22
     url: http://codepen.io/william-index/full/waLLzY/
 
   - title: "Callie Splatoon Fanart"
+    description: "Illustration"
     image: callie_splatoon.png
     date: 08/15/2015
     machine_date: 2015/08/15
     url: http://thewa.tumblr.com/post/126718721058/callie-from-splatoon
 
   - title: "CSS Stepped 8bit Animation"
+    description: "CSS experiment"
     image: 8bit_frames.png
     date: 07/24/2015
     machine_date: 2015/07/24
     url: http://codepen.io/william-index/full/QbZvoQ/
 
   - title: "Paper Mache Daruma"
+    description: "A japanese doll made of paper mache"
     image: paperdaruma.jpg
     date: 07/19/2015
     machine_date: 2015/07/19
     url: https://twitter.com/TheWAAnderson/status/622907853507051520
 
   - title: "CSS Daruma"
+    description: "A japanese doll made of CSS"
     image: cssdaruma.png
     date: 07/19/2015
     machine_date: 2015/07/19
     url: http://codepen.io/william-index/pen/pJZpgN
+
+  - title: "Placemat"
+    description: "An HTML table preprocessor"
+    image: plmat.gif
+    date: 04/12/2015
+    machine_date: 2015/04/12
+    url: http://william-index.github.io/placemat/index.html
+
+  - title: "Captain's Log"
+    description: "Twitter run table-top game"
+    image: captainslog.jpg
+    date: 01/08/2014
+    machine_date: 2014/01/08
+    url: http://captainsloggame.com/
+
+  - title: "WEAMON: Weather Monsters"
+    description: "iOS Games (Obj-C)"
+    image: weamon.jpg
+    date: 12/12/2013
+    machine_date: 2015/12/12
+    url: http://www.weamon.com/
+
+  - title: "Pettrip"
+    description: "iOS Games (Obj-C)"
+    image: pettrip.jpg
+    date: 07/19/2013
+    machine_date: 2013/07/19
+    url: http://williamanderson.io/index_interactive/pettrip/

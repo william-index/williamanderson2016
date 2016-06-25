@@ -1,1 +1,4 @@
 $max-width: 1200px;
+
+$screen-medium: new-breakpoint(min-width 540px);
+$screen-large: new-breakpoint(min-width 960px);

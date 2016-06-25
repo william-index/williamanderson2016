@@ -1,4 +1,5 @@
-$feature-card-padding: 10px;
+$feature-card-padding: 14px;
+$feature-card-margin: 0px;
 
 .feature-card-wrapper {
   display: flex;
@@ -8,103 +9,99 @@ $feature-card-padding: 10px;
   margin: 0 auto;
 }
 
-%feature-card {
-  display: block;
-  overflow: hidden;
-  width: 50vw;
-  height: 50vw;
-  position: relative;
-  padding: $feature-card-padding;
+.feature-card {
+  background: white;
+  border: 1px solid $color-brand-light;
+  cursor: pointer;
+  margin: #{$feature-card-margin * 2} $feature-card-margin 0;
+  padding: $feature-card-padding * .5;
+  transition: background .3s;
+  width: 100%;
 
-  &:hover .feature-card__img{
-    transform: scale(1.2, 1.2) translate(-40%, -40%);
+  &:hover {
+    background: $pattern-brand-primary;
+  }
+
+  @include media($screen-medium) {
+    width: 50%;
+    padding: $feature-card-padding * .66;
+  }
+
+  @include media($screen-large) {
+    width: 33.33%;
+    padding: $feature-card-padding;
   }
 }
 
-.feature-card--primary {
-  @extend %feature-card;
-  background: $pattern-brand-primary;
-  width: 100vw;
-  padding: $feature-card-padding;
-  border-top: 10px solid $color-brand-copy;
-  border-bottom: 10px solid $color-brand-copy;
-}
+.feature-card--featured {
+  @extend .feature-card;
 
-.feature-card--var0,
-.feature-card--var3 {
-  @extend %feature-card;
-  max-width: $max-width/2;
-  max-height: $max-width/2;
-}
+  @include media($screen-large) {
+    width: 60%;
 
-.feature-card--var1 {
-  @extend %feature-card;
-  background: gold;
-  max-width: $max-width/2;
-  max-height: $max-width/2;
-}
-
-.feature-card--var2 {
-  @extend %feature-card;
-  background: gold;
-  max-width: $max-width/2;
-  max-height: $max-width/2;
+    &+.feature-card--featured {
+      width: 40%;
+    }
+  }
 }
 
 .feature-card__img-wrap {
-  height: 100%;
-  position: relative;
   width: 100%;
   overflow: hidden;
+  line-height: 0;
 
-  .feature-card--primary & {
-    margin: 2% 0 0 2%;
-    width: 75%;
-    height: 80%;
+  img {
+    width: 100%;
+  }
+
+  @include media($screen-large) {
+    .feature-card--featured:first-child & {
+      background: none !important;
+    }
+
+    .feature-card--featured+.feature-card--featured & {
+      padding-top: (387/449)*100%;
+      height: 0;
+      background-size: cover;
+      background-position: center center;
+    }
   }
 }
 
-.feature-card__img {
-  height: 100%;
-  left: 50%;
-  min-height: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform .3s;
+.feature-card__title {
+  color: $color-brand-primary;
+  font-family: $font-brand-primary;
+  font-size: nth($font-sizes-item-title, 1);
+  font-weight: $font-weight-thin;
+  padding: $feature-card-padding 0 $feature-card-padding/2;
+  text-align: center;
+
+  @include media($screen-medium) {
+    font-size: nth($font-sizes-item-title, 1);
+  }
+
+  @include media($screen-large) {
+    font-size: nth($font-sizes-item-title, 1);
+
+    .feature-card--featured & {
+      font-size: nth($font-sizes-item-title, 2);
+    }
+  }
 }
 
-.feature-card__caption {
-  background: $color-brand-dark;
-  position: absolute;
+.feature-card__desc {
+  color: $color-brand-copy;
+  font-family: $font-brand-primary;
+  font-weight: $font-weight-thin;
+  text-align: center;
+  padding: $feature-card-padding/2 0 $feature-card-padding;
+}
 
-  .feature-card--primary & {
-    width: 60%;
-    height: 30%;
-    bottom: 5%;
-    right: 3%;
-  }
-
-  .feature-card--var1 &,
-  .feature-card--var2 & {
-    width: 60%;
-    height: 35%;
-  }
-
-  .feature-card--var1 & {
-    bottom: $feature-card-padding;
-    left: $feature-card-padding;
-  }
-
-  .feature-card--var2 & {
-    bottom: $feature-card-padding;
-    right: $feature-card-padding;
-  }
-
-  .feature-card--var0 &,
-  .feature-card--var3 & {
-    bottom: $feature-card-padding;
-    height: 35%;
-    width: calc(100% - #{$feature-card-padding * 2});
-  }
+.feature-card__date {
+  width: 100%;
+  text-align: right;
+  font-family: $font-brand-primary;
+  font-weight: $font-weight-thin;
+  color: $color-brand-midtone;
+  font-size: 14px;
 }
