@@ -4,9 +4,10 @@ $feature-card-margin: 0px;
 .feature-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: $max-width;
+  padding-top: 90px;
   margin: 0 auto;
+  max-width: $max-width;
+  width: 100%;
 }
 
 .feature-card {
@@ -23,13 +24,13 @@ $feature-card-margin: 0px;
   }
 
   @include media($screen-medium) {
-    width: 50%;
     padding: $feature-card-padding * .66;
+    width: 50%;
   }
 
   @include media($screen-large) {
-    width: 33.33%;
     padding: $feature-card-padding;
+    width: 33.33%;
   }
 }
 
@@ -46,9 +47,9 @@ $feature-card-margin: 0px;
 }
 
 .feature-card__img-wrap {
-  width: 100%;
-  overflow: hidden;
   line-height: 0;
+  overflow: hidden;
+  width: 100%;
 
   img {
     width: 100%;
@@ -60,10 +61,10 @@ $feature-card-margin: 0px;
     }
 
     .feature-card--featured+.feature-card--featured & {
-      padding-top: (387/449)*100%;
-      height: 0;
-      background-size: cover;
       background-position: center center;
+      background-size: cover;
+      height: 0;
+      padding-top: (387/449)*100%;
     }
   }
 }
@@ -93,15 +94,15 @@ $feature-card-margin: 0px;
   color: $color-brand-copy;
   font-family: $font-brand-primary;
   font-weight: $font-weight-thin;
-  text-align: center;
   padding: $feature-card-padding/2 0 $feature-card-padding;
+  text-align: center;
 }
 
 .feature-card__date {
-  width: 100%;
-  text-align: right;
-  font-family: $font-brand-primary;
-  font-weight: $font-weight-thin;
   color: $color-brand-midtone;
+  font-family: $font-brand-primary;
   font-size: 14px;
+  font-weight: $font-weight-thin;
+  text-align: right;
+  width: 100%;
 }

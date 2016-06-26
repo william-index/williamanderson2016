@@ -1,3 +1,4 @@
+{% import '/views/macros/cards.html' as cards %}
 <!DOCTYPE html>
 <html lang="{{doc.locale}}">
 <head>
@@ -12,11 +13,23 @@
   <link href='/feed.xml' rel='alternate' title='Content Feed for William Anderson' type='application/rss+xml'>
 </head>
 <body>
-  <header>
-
-  </header>
   <main>
-    <nav>
+    <input type='checkbox' id="open_nav" class='nav_control' />
+    <header class='top-header'>
+      <div class='top-header__content'>
+        Logo | gh tw cp gr
+        <button class='hamburger'>
+          <label for="open_nav">
+            <div></div><div></div><div></div>
+          </label>
+        </button>
+      </div>
+    </header>
+    <nav class='top_nav'>
+      <div class='top-header__content'>
+        <a href="/projects.html" class='top_nav__link'>Projects</a>
+        <a href="/blog.html" class='top_nav__link'>Blog</a>
+      </div>
     </nav>
     {% block main %}{% endblock %}
   </main>

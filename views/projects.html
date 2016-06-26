@@ -1,0 +1,14 @@
+{% extends "/views/base.html" %}
+
+{% block main %}
+  {# Lists Featured Projects #}
+  {% set all_projects = g.yaml('/content/projects.yaml') %}
+
+  <section class='feature-card-wrapper'>
+    {% for post in all_projects.projects %}
+      {% if not post.blog %}
+        {{ cards.feature_card(post) }}
+      {% endif %}
+    {% endfor %}
+  </section>
+{% endblock %}

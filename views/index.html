@@ -1,5 +1,4 @@
 {% extends '/views/base.html' %}
-{% import '/views/macros/cards.html' as cards %}
 
 {% block main %}
   {# Lists Featured Projects #}
@@ -12,10 +11,13 @@
       {% endif %}
     {% endfor %}
 
-    {% for post in all_projects.projects %}
+    {% for post in all_projects.projects[0:14] %}
       {% if not post.featured and not post.subdued %}
         {{ cards.feature_card(post) }}
       {% endif %}
     {% endfor %}
+  </section>
+  <section class='cta-box'>
+    <a href='/projects/' class='cta-box__btn'>See all projects</a>
   </section>
 {% endblock %}

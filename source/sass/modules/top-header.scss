@@ -1,0 +1,122 @@
+$header-size: 70px;
+
+.top-header {
+  background: white;
+  box-shadow: 0 0 3px 3px $color-shadow;
+  height: $header-size;
+  left: 0;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.top-header__content {
+  margin: 0 auto;
+  max-width: $max-width;
+  position: relative;
+  width: 100%;
+}
+
+// Burger
+.hamburger {
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: $header-size;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: $header-size;
+
+  label {
+    cursor: pointer;
+  }
+
+  &::before {
+    background: $pattern-brand-primary;
+    content: '';
+    display: block;
+    height: $header-size;
+    left: $header-size * -.15;
+    position: absolute;
+    top: 0;
+    width: $header-size * .15;
+  }
+
+  div {
+    background-color: $color-brand-primary;
+    height: $header-size / 12;
+    margin: 8px #{$header-size * .15};
+    transition: margin .2s, transform .4s;
+    width: $header-size * .7;
+  }
+
+  &:hover {
+    div {
+      margin: 12px #{$header-size * .15};
+    }
+  }
+}
+
+.nav_control:checked ~ .top-header .hamburger {
+  div {
+    margin: 0 #{$header-size * .15};
+    transform-origin: 50% 50%;
+  }
+
+  div:nth-child(1) {
+    transform: rotate(45deg) translateY(4px) translateX(4px);
+  }
+
+  div:nth-child(2) {
+    transform: scale(0,0);
+  }
+
+  div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-4px) translateX(4px);
+  }
+}
+
+.top_nav {
+  background: $color-brand-light;
+  box-shadow: 0 0 3px 3px $color-shadow;
+  height: 60px;
+  position: fixed;
+  transition: transform .4s;
+  width: 100%;
+  z-index: 9;
+  overflow: hidden;
+
+}
+
+.top_nav__link {
+  background: white;
+  border-radius: 1px;
+  color: $color-brand-darkest;
+  float: right;
+  font-family: $font-brand-primary;
+  font-weight: $font-weight-thin;
+  height: 34px;
+  line-height: 34px;
+  margin: 13px 18px 0 0;
+  padding: 0 14px;
+  transition: box-shadow .2s, color .2s;
+
+  &:hover {
+    color: $color-brand-primary;
+    box-shadow: 0 1px 1px 2px $color-shadow;
+  }
+}
+
+.nav_control {
+  display: none;
+}
+
+.nav_control:checked ~ .top_nav {
+  transform: translateY(70px);
+}
