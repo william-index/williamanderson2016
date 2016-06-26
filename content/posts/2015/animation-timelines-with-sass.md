@@ -15,13 +15,13 @@ Animation in CSS with @keyframes is a powerful feature, but it falls short when 
 
 A good example of this are the popups on the [Bourbon website](http://bourbon.io), but these employ javascript to append classes and thus time animation.
 
-<img src="/blog/2015/images/sass_timelines/bourbon.png"  alt='Design mockup for conversation animation.'/>
+<img src="/static/images/blog/sass_timelines/bourbon.png"  alt='Design mockup for conversation animation.'/>
 
 ## The Example.
 
 I'll be building out an example through this article, that I like to think of as an illustration of a conversation. Multiple 'people' markers will each say their own phrases in sequence and then repeat. AND, this will be done with just Sass!
 
-<img src="/blog/2015/images/sass_timelines/design_mockup.png"  alt='Design mockup for conversation animation.'/>
+<img src="/static/images/blog/sass_timelines/design_mockup.png"  alt='Design mockup for conversation animation.'/>
 
 ## Designing of the Animation
 
@@ -29,7 +29,7 @@ Before going into the overall timeline, we still need to plan the individual ani
 
 In this case I want my word bubbles to grow out from the point, with a bit of a spring action. If I were writing the keyframes for just one it would look something like this.
 
-```scss
+[sourcecode:ruby]
 
 +keyframes(fade_in)
   0%
@@ -40,13 +40,13 @@ In this case I want my word bubbles to grow out from the point, with a bit of a 
     +transform(scale(1.0))
   100%
     +transform(scale(0.0))
-```
+[/sourcecode]
 
 <span class="fade">Here if you aren't familiar with the mixins Im using [Bourbon](http://bourbon.io) which I mentioned earlier. It pre-fixes and simplifies and whatnot, much like compass and a bunch of other things, but I prefer this.</span>
 
 Lets visualize that as actual frames instead of percentages.
 
-<img src="/blog/2015/images/sass_timelines/single_object_timeline.png"  alt='Timeline for a single object.'/>
+<img src="/static/images/blog/sass_timelines/single_object_timeline.png"  alt='Timeline for a single object.'/>
 
 The lighter pink-tone here shows the scale from zero to one, if our animation was linear (no easing). We can see how the object changes in scale for each blocked out frame based on our animation. Most importantly, note that even though there are only 4 percentages given we use **5 frames**, when we draw it out like this. No matter what our frames _MUST_ be equal in size, meaning if you had used 4% size frames, you would need to have 25 of them, even if your animation keyframed at 0%, 4%, 96%, and 100%.
 
@@ -54,13 +54,13 @@ The lighter pink-tone here shows the scale from zero to one, if our animation wa
 
 When we start to look at this for multiple sequential animations, if it were on one timeline it may look something like this.
 
-<img src="/blog/2015/images/sass_timelines/multiple_object_timeline.png" class="full"  alt='Timeline for a multiple objects.'/>
+<img src="/static/images/blog/sass_timelines/multiple_object_timeline.png" class="full"  alt='Timeline for a multiple objects.'/>
 
 In css, the issue here is that keyframes simply adjust the style properties for an element when they are applied as an animation. Thus, they don't have selectors.
 
 We could apply the keyframes I showed above, and apply a delay, which would result in an animation with a flow something like this:
 
-<img src="/blog/2015/images/sass_timelines/undesired_timeline.png" class="full"  alt='Undesired Timeline for a multiple objects.'/>
+<img src="/static/images/blog/sass_timelines/undesired_timeline.png" class="full"  alt='Undesired Timeline for a multiple objects.'/>
 
 With <code>animation-repeat</code> applied, after each objects individual timeline (assuming we had well calculated delays <code>atnimation-delay</code>), after each new introduction, all previous would repeat, and introduce one more element. Until all of them where shown and popping in and out in rhythm.
 
@@ -68,7 +68,7 @@ Instead, each object will need its own unique timeline, that persists over durat
 
 To do this, we note that every timeline has the same zero and 100% values by default (meaning that there will be 6 percentages in our keyframes declaration 0%, 0%, 20%, 80%, 100% as an example for our first obejct &mdash; the red dot).
 
-<img src="/blog/2015/images/sass_timelines/desired_multiple_timelines.png" alt='Desired Timelines for a multiple objects.'/>
+<img src="/static/images/blog/sass_timelines/desired_multiple_timelines.png" alt='Desired Timelines for a multiple objects.'/>
 
 We will also then need to have 5 different <code>@keyframes</code> declarations, **one for each object**, which we will create dynamically with Sass in just a moment.
 
@@ -76,7 +76,7 @@ We will also then need to have 5 different <code>@keyframes</code> declarations,
 
 We are going to use some variables for this to make it easier.
 
-```scss
+[sourcecode:sass]
 
 $object_count: 5
 $object_order: 1 2 3 4 5
@@ -86,7 +86,7 @@ $animation_steps: 5
 $frame_count: $animation_steps * $object_count
 $frame_length:  100 / $frame_count
 $animation_length: $duration * $object_count  
-```
+[/sourcecode]
 
 Lets look at each one of these in turn.
 
@@ -110,17 +110,17 @@ With our variables and calculations all in place for the animation, things start
 
 In Sass, there is a concept called interpolation. <span class="fade">Its actually not unique to Sass at all.</span> Where we can do bits of calculation and have them print out as non-value areas in our compiled stylesheets.
 
-```scss
+[sourcecode:ruby]
 
 @for $i from 1 through $object_count
   +keyframes(bubble_#{$i})
-```
+[/sourcecode]
 
 By using this, we can [loop over](http://thesassway.com/intermediate/if-for-each-while#for) each object and create a set of keyframes for its unique timeline automatically. Here the variable <code>$i</code> is used just to track what spacing the animation has from the 5 timelines drawn above. The <code>#{$i}</code> means to print out the value of <code>$i</code> there when we compile to css.
 
 So this in the end would yield.
 
-```css
+[sourcecode:scss]
 
 @keyframes fade_1{
 
@@ -137,15 +137,15 @@ So this in the end would yield.
 @keyframes fade_5{
 
 }
-```
+[/sourcecode]
 
 Not so bad. But now we need to create the actual animations. Inside the <code>keyframes</code> inside the loop, we need to do two calculations unique to each object we are iterating over. First, we need to figure out which object we are on from our <code>$object_order</code> variable, and then we need to determine at what percent in the overall additive timeine that object should start animating in at.
 
-```scss
+[sourcecode:ruby]
 
 $on_object: nth($object_order, $i)
 $start_percent: (($on_object - 1)/$object_count) * 100
-```
+[/sourcecode]
 
 <code>nth</code> is a [Sass function](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#functions) that gives us the value of an item from a [list](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists). Our original sequence was just <code>1 2 3 4 5</code> but you can change that later.
 
@@ -153,7 +153,7 @@ The next calculation, takes which object we are on, and subtracts one (so that w
 
 We can now write out our entire keyframe declaration, we manually set the 0% and 100% value, which should be the same. Then we put in the same steps we had when it was all hand coded, but use interpolation to calculate the percent. The calculation is the start percent, plus the number of frames we want it to move (remember the original single object timeline?), and we multiply those frames by the <code>$frame_length</code> we calculated, so that they turn into percents.
 
-```scss
+[sourcecode:ruby]
 
 @for $i from 1 through $object_count
   +keyframes(bubble_#{$i})
@@ -171,7 +171,7 @@ We can now write out our entire keyframe declaration, we manually set the 0% and
       +transform(scale(0.0))
     100%
       +transform(scale(0.0))
-```
+[/sourcecode]
 
 ## Applying animations to the DOM Objects
 
@@ -179,14 +179,14 @@ Now that our animations are all defined, we just need to apply them to the actua
 
 This has its own bit of calculation to it, but nothing worse than what we have done already.
 
-```scss
+[sourcecode:ruby]
 
 @for $i from 1 through $object_count
   .conversation__participant:nth-child(#{$i})
     .conversation__participant__bubble
       +animation(bubble_#{$i} $animation_length $ease-in-out-back)
       +animation-iteration-count(infinite)
-```
+[/sourcecode]
 
 Here we loop over the same number of objects, and then I select the <code>:nth-child()</code> <span class="fade">meaning the bubbles from the object that is $i in order of how they appear in the DOM</span>.
 

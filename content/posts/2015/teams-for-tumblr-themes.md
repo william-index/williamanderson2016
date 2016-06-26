@@ -10,7 +10,7 @@ $public: true
 ---
 While major brands such as Skittles turn to Tumblr not only for broadcasting their identity, but also as the host for their brand websites, the demand for development of custom themes has increased. From my readings online however, there is little noted about a sane workflow for a team of developers to work together on a single Tumblr theme. The use of just one textfield full of html that represents all layouts proves problematic. There is however a way around it.
 
-<img src="/blog/2015/images/tumblr_themes/skittles_com.jpg" class="full" alt='Skittles.com Mar 22, 2015'/>
+<img src="/static/images/blog/tumblr_themes/skittles_com.jpg" class="full" alt='Skittles.com Mar 22, 2015'/>
 _\* I was not involved in making the Skittles website, its just an example of the draw and cultural force of Tumblr._
 
 # Assumptions/ pre-reqs/ limits
@@ -40,7 +40,7 @@ Perhaps the greatest/most important element to this workflow is partitioning fil
 
 So you will end up with some form of file structure like this
 
-```
+[sourcecode:ruby]
 
 source/
   layouts/
@@ -51,11 +51,11 @@ source/
     _photoset.haml
     _quote.haml
     index.haml.html
-```
+[/sourcecode]
 
 In the above, the theme.haml is used purely to bring your individual templates together. You can also simplify the number of pages you use to just being \_landing and \_permalink if all your permalink pages are the same. So you may end up with a theme.haml along these lines.
 
-```haml
+[sourcecode:haml]
 
 !!!
 %html
@@ -63,13 +63,13 @@ In the above, the theme.haml is used purely to bring your individual templates t
   %body
     = partial "/pages/landing"
     = partial "/pages/permalink"
-```
+[/sourcecode]
 
 ## Page Templates
 
 Now you are ready to get started on building the DOM. You can assign tasks to developers or have them choose in whatever your normal management style is (we have a Kanban board) and let individuals work on specific layouts. The theme variables for the blog flow in just like normal plain text, and haml works the same as always. So for each file, you will use the conditional wraps to build the layout.
 
-```haml
+[sourcecode:haml]
 
 {block:IndexPage}
 %section#blogRoll
@@ -79,7 +79,7 @@ Now you are ready to get started on building the DOM. You can assign tasks to de
       %h1 Example
   {/block:Posts}
 {/block:IndexPage}
-```
+[/sourcecode]
 
 This allows for linking about these as separate views for the website or as unique pages. You can get creative with the partials and includes as well, to reduce duplication of overlapping elements and to share templates for certain similar post types.
 
@@ -89,10 +89,10 @@ This allows for linking about these as separate views for the website or as uniq
 
 When working on the DOM, check your local server and view source. This is like proofreading to make sure its rendering how you want. You'll want to make sure its as desired and do as much work there as possible before each "push" to staging. By push to staging, I mean run a
 
-```sh
+[sourcecode:bash]
 
 bundle exec middleman build
-```
+[/sourcecode]
 
 and then copy and paste the innards of build/index.html into the Tumblr theme editor.
 
@@ -108,7 +108,7 @@ Breaking out your Sass into partials for sections/whatever will also ease the mu
 
 So all together your file structure/flow will look something like the below. Where syncing source, will keep everyones scripts and style up to date, but leave them having to move the DOM to their dev blog when needed. Or if using the database bottleneck approach, they wont have to do anything to see changes reflected, but also only one team member (at a time at least) will have the ability to update it.
 
-[![Tumblr team workflow by William Anderson](images/tumblr_themes/tumblr_flow.gif)](images/tumblr_themes/tumblr_flow.gif)
+[![Tumblr team workflow by William Anderson](/static/images/blog/tumblr_themes/tumblr_flow.gif)](images/tumblr_themes/tumblr_flow.gif)
 
 # "Pushing" to "Prod"
 

@@ -17,113 +17,21 @@ I did lots of things and learned lots of lessons, and I wanted to take the time 
 
 # In 2015, I ...
 
-<section class="numerical-facts">
-  <a href="https://www.goodreads.com/user_challenges/2680536" target="\_blank" class="numerical-fact--link">
-    <figure class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Read</span>
-      <span class="numerical-fact__content--large">26</span>
-      <span class="numerical-fact__content">books</span>
-    </figure>
-  </a>
-  <a href="http://codepen.io/collection/AEPaQE/" target="\_blank" class="numerical-fact--link">
-    <figure class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Made</span>
-      <span class="numerical-fact__content--large">22</span>
-      <span class="numerical-fact__content">pens on Codepen</span>
-    </figure>
-  </a>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Interviewed with</span>
-      <span class="numerical-fact__content--large">19</span>
-      <span class="numerical-fact__content">companies</span>
-    </div>
-  </figure>
-  <a href="http://williamanderson.io/weeklies.html" target="\_blank" class="numerical-fact--link">
-    <figure class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Completed</span>
-      <span class="numerical-fact__content--large">14</span>
-      <span class="numerical-fact__content">Micro Projects</span>
-    </figure>
-  </a>
-  <a href="http://williamanderson.io/blog.html" target="\_blank" class="numerical-fact--link">
-    <figure class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Wrote</span>
-      <span class="numerical-fact__content--large">6</span>
-      <span class="numerical-fact__content">blog posts</span>
-    </figure>
-  </a>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Scrambled for</span>
-      <span class="numerical-fact__content--large">6</span>
-      <span class="numerical-fact__content">days in Taiwan</span>
-    </div>
-  </figure>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Experienced magic for</span>
-      <span class="numerical-fact__content--large">5</span>
-      <span class="numerical-fact__content">days at Disney</span>
-    </div>
-  </figure>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Shopped for</span>
-      <span class="numerical-fact__content--large">4</span>
-      <span class="numerical-fact__content">days in Tokyo</span>
-    </div>
-  </figure>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Enjoyed</span>
-      <span class="numerical-fact__content--large">4</span>
-      <span class="numerical-fact__content">days touring Vietnam</span>
-    </div>
-  </figure>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Gave</span>
-      <span class="numerical-fact__content--large">2</span>
-      <span class="numerical-fact__content">talks</span>
-    </div>
-  </figure>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Taught</span>
-      <span class="numerical-fact__content--large">1</span>
-      <span class="numerical-fact__content">course</span>
-    </div>
-  </figure>
-  <a href="https://itunes.apple.com/us/app/bat-cannon/id1044096597?mt=8" target="\_blank" class="numerical-fact--link">
-    <figure class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Crafted</span>
-      <span class="numerical-fact__content--large">1</span>
-      <span class="numerical-fact__content">iOS game</span>
-    </figure>
-  </a>
-  <a href="http://william-index.github.io/placemat/index.html" target="\_blank" class="numerical-fact--link">
-    <figure class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Invented</span>
-      <span class="numerical-fact__content--large">1</span>
-      <span class="numerical-fact__content">preprocessor language</span>
-    </figure>
-  </a>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Quit</span>
-      <span class="numerical-fact__content--large">1</span>
-      <span class="numerical-fact__content">job</span>
-    </div>
-  </figure>
-  <figure class="numerical-fact">
-    <div class="numerical-fact__wrap">
-      <span class="numerical-fact__content">Started</span>
-      <span class="numerical-fact__content--large">1</span>
-      <span class="numerical-fact__content">job</span>
-    </div>
-  </figure>
-</section>
+- <a href="https://www.goodreads.com/user_challenges/2680536" target="\_blank">Read 26 books</a>
+- <a href="http://codepen.io/collection/AEPaQE/" target="\_blank">Made 22 pens on Codepen</a>
+- Interviewed with 19 companies
+- <a href="http://williamanderson.io/weeklies.html" target="\_blank">Completed 14 micro-projects</a>
+- <a href="http://williamanderson.io/blog/" target="\_blank">Wrote 6 blogposts</a>
+- Scrambled for 6 days in Taiwan
+- Experienced magic for 5 days at Disney
+- Shopped for 4 days in Tokyo
+- Sweltered for 4 days in Vietnam
+- Gave 2 talks
+- Taught 1 course at The New School
+- <a href="https://itunes.apple.com/us/app/bat-cannon/id1044096597?mt=8" target="\_blank">Crafted 1 iOS Game</a>  
+- <a href="http://william-index.github.io/placemat/index.html" target="\_blank">Invented 1 preprocessor language</a>
+- Quite 1 job
+- Started 1 job
 
 ## Memorable Events.
 While each on of these really deserves its own blog post, there were some really key memorable events from 2015. For the sake of brevity I'm listing them below, not in any particular order.
@@ -184,7 +92,7 @@ In 2015 I created this website and made a bunch of blank sections that I hoped t
 
 In 2016 I have a lot I want to do as well. Even more than 2015. Ill be tracking it as a <a href='https://github.com/william-index/thewilliamanderson_com/milestones/2016' target='\_blank'>milestone on the github for this website</a>, and I would love if you checked it out!
 
-<img src="/blog/2016/images/yir2015/milestone2016.png" />
+<img src="/static/images/blog/yir2015/milestone2016.png" />
 
 The short of it is to make more projects, read more books, learn Mandarin, take some online courses, start a Meetup group and more. There are a few hidden goals as well that I'm not ready to share yet, but may pop in there later this year as well.
 

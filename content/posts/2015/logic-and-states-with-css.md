@@ -8,7 +8,7 @@ $excerpt: With a bit of planning and wizardry hover states and forms can handle 
 $coverimg: 2015/images/css_logic/cover.png
 $public: true
 ---
-<img src="/blog/2015/images/css_logic/banner.png" class="full" />
+<img src="/static/images/blog/css_logic/banner.png" class="full" />
 
 ## Why use logical CSS instead of just JavaScript?
 CSS has come a long way, and finally older browsers are starting to fade. In many instances JavaScript, when written well, has performance benefits in animation as well as other areas that far outweigh CSS's convenience.
@@ -50,7 +50,7 @@ Would mean to select *any* DOM element with a class of <code>item</code> that is
 ## Hover-state logic
 The easiest way to use these selectors to get some really interesting results is with hover states. Here the general sibling selector <code>~</code> is the most valuable tool. With it we can for example detect hover over a specific portion of an interface and have other objects react accordingly.
 
-<img src="/blog/2015/images/css_logic/hover-areas.gif" alt="Interface with 2 DOM Elements covering half the screen each." />
+<img src="/static/images/blog/css_logic/hover-areas.gif" alt="Interface with 2 DOM Elements covering half the screen each." />
 
 In the diagram above, we see that there are 2 <code>div</code> elements each styled to occupy either half of their parent container. They are also shown with transparency, and we can see that beneath them (visually) There is another <code>div</code> element. The markup for this comp may look something like:
 
@@ -106,7 +106,7 @@ Here we have a form with a checkbox followed by a <code>div</code>. Using the <c
 
 This gives us an application with two states:
 
-<img src="/blog/2015/images/css_logic/select-toggle.png" alt="Diagram of lightswitch css application with 2 states." />
+<img src="/static/images/blog/css_logic/select-toggle.png" alt="Diagram of lightswitch css application with 2 states." />
 
 <span class="fade">This is an abstracted representation so that it looks nicer in my blog, you would have to apply more css to get this final styling.</fade>
 
