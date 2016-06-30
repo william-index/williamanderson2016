@@ -74,7 +74,7 @@ $feature-card-margin: 0px;
 }
 
 .feature-card__title {
-  color: $color-brand-primary;
+  color: darken($color-brand-primary, 20%);
   font-family: $font-brand-primary;
   font-size: nth($font-sizes-item-title, 1);
   font-weight: $font-weight-thin;

@@ -14,3 +14,4 @@ $pattern-brand-primary: url('/static/images/patterns/primary.png');
 $pattern-brand-loc: url('/static/images/patterns/loc.png');
 
 $gradient-brand: linear-gradient($color-brand-primary 70%,#eee);
+$gradient-brand-subtle: linear-gradient(white 70%, $color-brand-light);

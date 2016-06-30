@@ -4,7 +4,7 @@ $slug: animation-timeslines-with-sass
 $subtitle: How to curate and time recurring animations sequentially and looped over multiple objects with Sass and not lose your mind.
 $dates:
   published: 2015/06/08
-$excerpt: CSS animations are fantastic, but when it comes to longer sequences over multiple objects that animate in order things get tricky. This tutorial explores creating a timeline for such animations using Sass.
+excerpt: CSS animations are fantastic, but when it comes to longer sequences over multiple objects that animate in order things get tricky. This tutorial explores creating a timeline for such animations using Sass.
 $coverimg: 2015/images/sass_timelines/cover.gif
 $public: true
 ---

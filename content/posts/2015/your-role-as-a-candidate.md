@@ -4,7 +4,7 @@ $slug: your-role-as-a-candidate
 $subtitle: Understanding your own role in the job hunt, and advice for interviewing successfully
 $dates:
   published: 2015/7/18
-$excerpt: As professionals in software/web engineering, there are many expectations set about what we can do on a technical level. Your career however is more than just writing code, its about making decisions.
+excerpt: As professionals in software/web engineering, there are many expectations set about what we can do on a technical level. Your career however is more than just writing code, its about making decisions.
 $coverimg: 2015/images/roleascandidate/cover.gif
 $public: true
 ---

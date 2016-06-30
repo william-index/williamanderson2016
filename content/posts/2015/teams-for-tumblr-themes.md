@@ -4,7 +4,7 @@ $slug: teams-for-tumblr-themes
 $subtitle: ""
 $dates:
   published: 2015/03/22
-$excerpt: A proposed workflow for developing a Tumblr theme with a team of developers.
+excerpt: A proposed workflow for developing a Tumblr theme with a team of developers.
 $cover_img: 2015/images/tumblr_themes/cover.gif
 $public: true
 ---

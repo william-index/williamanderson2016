@@ -1,0 +1,13 @@
+{% extends "/views/base.html" %}
+
+{% block main %}
+  {{ headers.page('Blog', 'Musings, teachings and learnings.') }}
+
+  {# Lists Featured Projects #}
+  {% set posts = g.docs('posts', order_by='date') %}
+  <section class='blogproll-wrapper'>
+    {% for post in posts %}
+      {{ postparts.post_stub(post) }}
+    {% endfor %}
+  </section>
+{% endblock %}

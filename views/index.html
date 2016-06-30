@@ -20,4 +20,14 @@
     {% endfor %}
   </section>
   {{ ctas.box('See all projects','/projects/') }}
+
+  {{ headers.midpage('Recent posts') }}
+
+  {% set posts = g.docs('posts', order_by='date')[0:3] %}
+  <section class='blogproll-wrapper'>
+    {% for post in posts %}
+      {{ postparts.post_stub(post) }}
+    {% endfor %}
+  </section>
+  {{ ctas.box('See all posts','/blog/') }}
 {% endblock %}

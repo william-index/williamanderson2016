@@ -2,19 +2,24 @@
   display: block;
   width: 100%;
   background: $gradient-brand;
-  // height: 230px;
   padding-top: 70px;
+}
 
-  // @include media($screen-medium) {
-  //   height: 240px;
-  // }
+.page-header--mid {
+  @extend .page-header;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding-top: 0;
+  background: $gradient-brand-subtle;
+  border: 1px solid $color-brand-light;
+  border-top: 0;
 }
 
 .page-header__content {
   height: 100%;
   margin: 0 auto;
   max-width: $max-width;
-  padding: 20px;
+  padding: 40px 20px;
   width: 100%;
   text-align: center;
 }
@@ -24,6 +29,10 @@
   font-family: $font-brand-primary;
   font-size: 32px;
   font-weight: $font-weight-thin;
+
+  .page-header--mid & {
+    color: darken($color-brand-primary, 20%);
+  }
 
   @include media($screen-medium) {
     font-size: 48px;
@@ -35,4 +44,8 @@
   font-family: $font-brand-primary;
   font-weight: $font-weight-normal;
   padding: .1rem 0 .6rem;
+
+  .page-header--mid & {
+    color: $color-brand-primary;
+  }
 }
