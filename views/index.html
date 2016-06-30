@@ -1,6 +1,8 @@
 {% extends '/views/base.html' %}
 
 {% block main %}
+  {{ headers.page('William Anderson', 'Web & Software Engineer, Artist, Teacher') }}
+
   {# Lists Featured Projects #}
   {% set all_projects = g.yaml('/content/projects.yaml') %}
 
@@ -17,7 +19,5 @@
       {% endif %}
     {% endfor %}
   </section>
-  <section class='cta-box'>
-    <a href='/projects/' class='cta-box__btn'>See all projects</a>
-  </section>
+  {{ ctas.box('See all projects','/projects/') }}
 {% endblock %}

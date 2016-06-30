@@ -1,9 +1,10 @@
 {% extends "/views/base.html" %}
 
 {% block main %}
+  {{ headers.page('Projects', 'Feed of all side projects. Some projects made in collaboration with others.') }}
+
   {# Lists Featured Projects #}
   {% set all_projects = g.yaml('/content/projects.yaml') %}
-
   <section class='feature-card-wrapper'>
     {% for post in all_projects.projects %}
       {% if not post.blog %}

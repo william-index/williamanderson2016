@@ -1,11 +1,16 @@
-$color-brand-primary: #d65b5b;
+$color-brand-primary: #FFADD6;
+$color-brand-secondary: #00e1b7;
 $color-brand-dark: #999;
 $color-brand-darkest: #000;
 $color-brand-copy: #757575;
 $color-brand-light: #efefef;
 $color-brand-midtone: #cdcdcd;
+$color-brand-link: $color-brand-secondary;
+$color-brand-link-hover: darken($color-brand-link, 20%);
 
 $color-shadow: rgba(0, 0, 0, .2);
 
 $pattern-brand-primary: url('/static/images/patterns/primary.png');
 $pattern-brand-loc: url('/static/images/patterns/loc.png');
+
+$gradient-brand: linear-gradient($color-brand-primary 70%,#eee);

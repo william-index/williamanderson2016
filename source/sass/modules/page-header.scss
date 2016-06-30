@@ -1,0 +1,38 @@
+.page-header {
+  display: block;
+  width: 100%;
+  background: $gradient-brand;
+  // height: 230px;
+  padding-top: 70px;
+
+  // @include media($screen-medium) {
+  //   height: 240px;
+  // }
+}
+
+.page-header__content {
+  height: 100%;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.page-header__title {
+  color: white;
+  font-family: $font-brand-primary;
+  font-size: 32px;
+  font-weight: $font-weight-thin;
+
+  @include media($screen-medium) {
+    font-size: 48px;
+  }
+}
+
+.page-header__subtitle {
+  color: white;
+  font-family: $font-brand-primary;
+  font-weight: $font-weight-normal;
+  padding: .1rem 0 .6rem;
+}

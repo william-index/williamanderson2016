@@ -8,6 +8,10 @@ $feature-card-margin: 0px;
   margin: 0 auto;
   max-width: $max-width;
   width: 100%;
+
+  .page-header + & {
+    padding-top: 45px;
+  }
 }
 
 .feature-card {

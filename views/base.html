@@ -1,4 +1,6 @@
 {% import '/views/macros/cards.html' as cards %}
+{% import '/views/macros/ctas.html' as ctas %}
+{% import '/views/macros/headers.html' as headers %}
 <!DOCTYPE html>
 <html lang="{{doc.locale}}">
 <head>
@@ -11,10 +13,12 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <meta name="description" value="{{_(podspec.description)}}">
   <link href='/feed.xml' rel='alternate' title='Content Feed for William Anderson' type='application/rss+xml'>
+  <!-- TODO: Analytics -->
+  <!-- TODO: Favicon -->
 </head>
 <body>
   <main>
-    <input type='checkbox' id="open_nav" class='nav_control' />
+    <input type='checkbox' id="open_nav" class='nav_control' autocomplete="off"/>
     <header class='top-header'>
       <div class='top-header__content'>
         Logo | gh tw cp gr
@@ -27,13 +31,18 @@
     </header>
     <nav class='top_nav'>
       <div class='top-header__content'>
-        <a href="/projects.html" class='top_nav__link'>Projects</a>
-        <a href="/blog.html" class='top_nav__link'>Blog</a>
+        <a href="/projects/" class='top_nav__link'>Projects</a>
+        <a href="/blog/" class='top_nav__link'>Blog</a>
       </div>
     </nav>
     {% block main %}{% endblock %}
   </main>
-  <footer>
+  <footer class='page-footer'>
+    <div class='page-footer__content'>
+      Design and Code of this site by William Anderson. Check out the source <a href='https://github.com/william-index/williamanderson2016' target='_blank'>here</a>.
+      <br />Many personal projects, and all professional ones were made with others.
+      <br />Contact me via email anytime: <a href='mailto:thewilliamanderson@gmail.com' target='_blank'>thewilliamanderson@gmail.com</a><br />
+    </div>
   </footer>
 </body>
 </html>

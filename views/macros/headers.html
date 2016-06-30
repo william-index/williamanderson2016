@@ -1,0 +1,10 @@
+{% macro page(title, subtitle) %}
+  <header class='page-header'>
+    <div class='page-header__content'>
+      <h1 class='page-header__title'>{{title}}</h1>
+      {% if subtitle %}
+        <h2 class='page-header__subtitle'>{{subtitle}}</h2>
+      {% endif %}
+    </div>
+  </header>
+{% endmacro %}

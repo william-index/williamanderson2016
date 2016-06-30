@@ -16,7 +16,7 @@
 }
 
 .cta-box__btn {
-  background: $color-brand-primary;
+  background: $color-brand-secondary;
   border-radius: 2px;
   color: white;
   display: block;
@@ -34,6 +34,6 @@
   &:hover {
     background: white;
     box-shadow: 0 1px 2px 1px $color-shadow;
-    color: $color-brand-primary;
+    color: $color-brand-secondary;
   }
 }
