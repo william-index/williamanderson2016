@@ -1,4 +1,12 @@
 projects:
+  - title: "2016 Personal website refresh"
+    description: "Static site built in Grow.io"
+    image: williamanderson2016.png
+    date: 07/01/2016
+    machine_date: 2016/07/01
+    url: https://github.com/william-index/williamanderson2016
+    summary: Updating my brand a little, and making my site more focused to listing my personal projects.
+
   - title: "#004 - Composed on a 'Destiny Clock'"
     description: "P-Comp Composed Midi"
     image: 004.png
