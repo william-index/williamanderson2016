@@ -1,0 +1,145 @@
+// Legacy Import from previous williamanderson website
+
+.logo
+  display: block
+  float: left
+  margin-top: 6px
+  margin-right: 8px
+  position: relative
+  z-index: 5
+
+/* GLOBAL VARIABLES */
+$red: $color-brand-primary
+$grey: $color-brand-secondary
+$sans: $font-brand-primary
+
+$unit: 7px
+$padding: 1px
+$grid: 5
+
+$width: ($grid * $unit) + ($grid * $padding)
+
+/* Mixins */
+=block($w, $h)
+  display: block
+  width: $w
+  height: $h
+
+=font($size, $line)
+  font-size: $size
+  line-height: $line
+
+/* Page Styles */
+body
+  background: white
+
+//********************//
+/* Logo Styles ********/
+
+// matrix of color and display values for pattern
+$square_r1: 1, 0, 0, 0, 1
+$square_r2: 1, 0, 1, 0, 1
+$square_r3: 0, 1, 2, 1, 0
+$square_r4: 0, 2, 0, 2, 0
+$square_r5: 2, 0, 0, 0, 2
+$arrangement: $square_r1, $square_r2, $square_r3, $square_r4, $square_r5
+
+// Color matching array based on matrix values
+$colors: $grey, $red
+
+// General Logo Layout
+a#logo
+  +block($width, $width)
+  background: white
+  padding: $unit + $padding
+  position: relative
+  box-sizing: content-box
+
+  h1
+    +block(125px,  auto)
+    +font(16px, 17px)
+    position: absolute
+    top: 0px
+    left: 10px
+    margin-top: $unit * 2
+    text-transform: uppercase
+    font-family: $sans
+    text-align: left
+    opacity: 0
+    visibility: hidden
+    color: $red
+    +transition(all 0.5s)
+    letter-spacing: -20px
+    span
+      color: $color-brand-dark
+
+  #squares
+    +block($width, $width)
+    padding: $unit + $padding
+    position: absolute
+    top: 0px
+    left: 0px
+
+  .wrap
+    +block($unit, $unit)
+    position: absolute
+    +transition(all 0.5s)
+
+  .square
+    +block($unit, $unit)
+
+// Logo Hover State
+a#logo:hover
+  h1
+    opacity: 1
+    visibility: visible
+    top: 0px
+    margin-left: 12px
+    letter-spacing: 1px
+    span
+      background: white
+
+  // rotatation
+  #squares
+    +animation(spin 2s)
+    box-sizing: content-box
+
+  // radially arranges squares and changes to circles
+  @for $i from 1 through 12
+    .wrap:nth-child(#{$i})
+      top: $unit
+      left: $unit
+      +transform(rotate( (360deg / 12) * $i ))
+      +transform-origin(($width+$padding)/2 ($width+$padding)/2)
+      // Counter-balance the knife, quick slash! Retract!
+      .square
+        +transform(rotate( 45deg ))
+
+/*
+ *  Iterates through matrix to place
+ *    logo squares on coodinates
+ *
+ *  Only increments the nth-child if positive
+ *    value is found in the matrix
+ */
+$onSquare: 0
+@for $i from 1 through $grid
+  @for $j from 1 through $grid
+    $coords: (($i - 1) * $grid) + $j
+    $val: nth(nth($arrangement, $i), $j)
+    @if $val != 0
+      $onSquare: $onSquare+1
+      // Actual plotting of color/points
+      a#logo .wrap:nth-child(#{$onSquare})
+        top: $i * ($unit + $padding)
+        left: $j * ($unit + $padding)
+        .square
+          background: nth($colors, $val)
+
+/********************/
+/* Keyframes ********/
++keyframes(spin)
+  0%
+    +transform(rotate( 0deg ))
+  100%
+    +transform(rotate( 360deg ))

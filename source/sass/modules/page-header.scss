@@ -29,6 +29,8 @@
   font-family: $font-brand-primary;
   font-size: 32px;
   font-weight: $font-weight-thin;
+  max-width: $blog-max-width;
+  margin: 0 auto;
 
   .page-header--mid & {
     color: darken($color-brand-primary, 20%);
@@ -44,6 +46,8 @@
   font-family: $font-brand-primary;
   font-weight: $font-weight-normal;
   padding: .1rem 0 .6rem;
+  max-width: $blog-max-width;
+  margin: 0 auto;
 
   .page-header--mid & {
     color: $color-brand-primary;

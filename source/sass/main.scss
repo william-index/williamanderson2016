@@ -16,6 +16,8 @@
 @import "modules/page-footer";
 @import "modules/blog-post-stub";
 @import "modules/blogpost-meta";
+@import "modules/social-nav";
+@import "modules/logo";
 
 
 
@@ -27,4 +29,6 @@
 
 body {
   background: white;
+  min-width: 320px;
+  overflow: scroll;
 }

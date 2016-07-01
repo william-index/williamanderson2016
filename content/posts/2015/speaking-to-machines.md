@@ -269,7 +269,7 @@ Now that we have a purely numeric representation of our code, in hex pairs (whic
 Cool right? We just wrote collision detection in machine code!!
 
 Oh, and if you want to play the game, you can download it here:
-<a href="/blog/2015/downloads/crabtastic.nes" target="\_blank">Crabtastic</a>.
+<a href="/static/downloads/crabtastic.nes" target="\_blank">Crabtastic</a>.
 
 
 **References:**

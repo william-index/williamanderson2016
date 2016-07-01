@@ -1,0 +1,45 @@
+.social-nav {
+  display: block;
+  float: left;
+  height: 70px;
+  position: relative;
+  padding-left: 10px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 2px;
+    height: 30px;
+    background: $color-brand-light;
+  }
+}
+
+.icon-github {
+  display: none;
+
+  @include media($screen-medium) {
+    display: inline-block;
+  }
+}
+
+.social-nav__icon {
+  &::before {
+    color: $color-brand-dark;
+    font-size: 24px;
+    line-height: 70px;
+    margin: 0 6px;
+    transition: color .1s;
+
+    @include media($screen-medium) {
+      font-size: 28px;
+      margin: 0 8px;
+    }
+  }
+
+  &:hover::before {
+    color: $color-brand-secondary;
+  }
+}

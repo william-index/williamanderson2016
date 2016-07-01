@@ -2,6 +2,7 @@
 {% import '/views/macros/ctas.html' as ctas %}
 {% import '/views/macros/headers.html' as headers %}
 {% import '/views/macros/postparts.html' as postparts %}
+{% import '/views/macros/logos.html' as logos %}
 <!DOCTYPE html>
 <html lang="{{doc.locale}}">
 <head>
@@ -14,7 +15,16 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <meta name="description" value="{{_(podspec.description)}}">
   <link href='/feed.xml' rel='alternate' title='Content Feed for William Anderson' type='application/rss+xml'>
-  <!-- TODO: Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48127510-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
   <!-- TODO: Favicon -->
 </head>
 <body>
@@ -22,7 +32,13 @@
     <input type='checkbox' id="open_nav" class='nav_control' autocomplete="off"/>
     <header class='top-header'>
       <div class='top-header__content'>
-        Logo | gh tw cp gr
+        {{ logos.header() }}
+        <nav class='social-nav'>
+          <a href='https://github.com/william-index' class='icon-github social-nav__icon' target='_blank'></a>
+          <a href='https://twitter.com/TheWAAnderson' class='icon-twitter social-nav__icon' target='_blank'></a>
+          <a href='http://codepen.io/william-index/' class='icon-codepenlogo social-nav__icon' target='_blank'></a>
+          <a href='https://www.goodreads.com/user/show/35020173-william-anderson' class='icon-goodreads-letter-logo social-nav__icon' target='_blank'></a>
+        </nav>
         <label for="open_nav" class="burger-btn"></label>
         <button class='hamburger'>
             <div></div><div></div><div></div>

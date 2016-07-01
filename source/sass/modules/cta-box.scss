@@ -1,4 +1,5 @@
 .cta-box {
+  @include clearfix();
   width: 100%;
   background: $color-brand-light;
   height: 120px;
@@ -15,8 +16,55 @@
   }
 }
 
+.cta-box--titled {
+  @extend .cta-box;
+  height: auto;
+}
+
+.cta-box__eyebrow {
+  display: block;
+  float: left;
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+  font-family: $font-brand-primary;
+  color: $color-brand-darkest;
+}
+
+.cta-box__title {
+  display: block;
+  float: left;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  width: 100%;
+  font-weight: $font-weight-thin;
+  font-family: $font-brand-primary;
+  color: darken($color-brand-primary, 20%);
+
+  .cta-box__eyebrow + & {
+    margin-top: 6px;
+  }
+}
+
 .cta-box__btn {
+  display: block;
+  float: left;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
   width: 240px;
+
+  .cta-box--titled & {
+    position: static;
+    margin: 10px auto;
+    transform: translateX(-50%);
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .cta-box__title + & {
+    top: calc(50% + 20px);
+  }
 }

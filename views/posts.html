@@ -9,22 +9,10 @@
   <article class='blog_post'>
     <section>{{doc.html|safe}}</section>
   </article>
-  <!-- TODO: format and style previous/next -->
-  <div class="meta-alt">
-    {% set next_doc = doc.next() %}
-    {% set prev_doc = doc.prev() %}
 
-    {% if next_doc %}
-    <div>
-      <span>{{_('Next:')}}</span>
-      <a href="{{next_doc.url.path}}">{{next_doc.title}}</a>
-    </div>
-    {% endif %}
-    {% if prev_doc %}
-    <div>
-      <span>{{_('Back:')}}</span>
-      <a href="{{prev_doc.url.path}}">{{prev_doc.title}}</a>
-    </div>
-    {% endif %}
-  </div>
+  {% set next_doc = doc.next() %}
+
+  {% if next_doc %}
+    {{ ctas.box('Read post',next_doc.url.path,next_doc.title, 'Want to read more? Check out:') }}
+  {% endif %}
 {% endblock %}

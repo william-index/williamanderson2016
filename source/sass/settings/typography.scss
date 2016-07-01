@@ -1,6 +1,46 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('/static/fonts/icomoon.eot?dxe5sa');
+    src:    url('/static/fonts/icomoon.eot?dxe5sa#iefix') format('embedded-opentype'),
+        url('/static/fonts/icomoon.ttf?dxe5sa') format('truetype'),
+        url('/static/fonts/icomoon.woff?dxe5sa') format('woff'),
+        url('/static/fonts/icomoon.svg?dxe5sa#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $font-brand-primary: "Open Sans", arial, helvetica, sans-serif;
 $font-brand-copy: Georgia, serif;
 
 $font-weight-thin: 300;
 $font-weight-normal: 400;
 $font-sizes-item-title: (18px, 24px, 18px);
+
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-codepenlogo:before {
+    content: "\e900";
+}
+.icon-goodreads-letter-logo:before {
+    content: "\e901";
+}
+.icon-twitter:before {
+    content: "\e902";
+}
+.icon-github:before {
+    content: "\e903";
+}

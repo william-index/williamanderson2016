@@ -1,5 +1,7 @@
-{% macro box(link_name, link, title) %}
-<section class='cta-box'>
+{% macro box(link_name, link, title, eyebrow) %}
+<section class='cta-box{% if title %}--titled{% endif %}'>
+  {% if eyebrow %}<span class='cta-box__eyebrow'>{{eyebrow}}</span>{% endif %}
+  {% if title %}<h3 class='cta-box__title'>{{title}}</h3>{% endif %}
   <a href='{{link}}' class='cta-box__btn btn'>{{link_name}}</a>
 </section>
 {% endmacro %}
