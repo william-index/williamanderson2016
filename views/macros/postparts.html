@@ -1,9 +1,9 @@
 {% macro post_stub(post) %}
   <article class='post-stub'>
-    <a href='{{post.url}}'>
+    <a href='{{post.url.path}}'>
       <h1 class='post-stub__title'>{{post.title}}</h1>
     </a>
     <p class='post-stub__excerpt'>{{post.excerpt}}</p>
-    <a  class='btn post-stub__link' href='{{post.url}}'>Read article</a>
+    <a  class='btn post-stub__link' href='{{post.url.path}}'>Read article</a>
   </article>
 {% endmacro %}

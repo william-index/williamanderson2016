@@ -1,5 +1,5 @@
 {% macro feature_card(post, feature) %}
-  <a href='{{post.url}}' class='feature-card{% if feature %}--featured{% endif %}' target='_blank'>
+  <a href='{{post.url.path}}' class='feature-card{% if feature %}--featured{% endif %}' target='_blank'>
     <figure>
       <div class='feature-card__img-wrap' {% if feature %}style="background-image: url('/static/images/project_covers/{{post.image}}');"{% endif %}>
         <img src='/static/images/project_covers/{{post.image}}' class='feature-card__img'/>

@@ -13,15 +13,15 @@
   {% for post in all_projects.projects %}
   <entry>
     <title>{{post.title}}</title>
-    <link rel="alternate" href="{{post.url}}"/>
-    <id>{{post.url}}</id>
+    <link rel="alternate" href="{{post.url.path}}"/>
+    <id>{{post.url.path}}</id>
     <published>{{post.machine_date|datetimeformat}}</published>
     <updated>{{post.machine_date|datetimeformat}}</updated>
     <author>
       <name>William Anderson</name>
     </author>
     <summary type="html">{{post.summary}}</summary>
-    <content type="html">{{post.title}} {{post.url}}</content>
+    <content type="html">{{post.title}} {{post.url.path}}</content>
   </entry>
   {% endfor %}
 </feed>
