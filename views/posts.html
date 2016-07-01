@@ -1,15 +1,15 @@
 {% extends "/views/base.html" %}
 
 {% block main %}
-  <div class="meta">
-    <h1><a href="{{doc.url.path}}">{{doc.title}}</a></h1>
-    <div class="attribution">
-      {{_('Posted %(date)s', date=doc.dates('published'))}}
-    </div>
+  {{ headers.page(doc.title, doc.subtitle) }}
+  <div class="blogpost-meta">
+    <a class="blogpost-meta__author" href="https://plus.google.com/u/0/113885475286967334906" rel="author" target="_blank">William Anderson</a>
+    <div class="blogpost-meta__date">{{doc.date}}</div>
   </div>
   <article class='blog_post'>
     <section>{{doc.html|safe}}</section>
   </article>
+  <!-- TODO: format and style previous/next -->
   <div class="meta-alt">
     {% set next_doc = doc.next() %}
     {% set prev_doc = doc.prev() %}

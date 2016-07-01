@@ -19,6 +19,17 @@ $header-size: 70px;
   width: 100%;
 }
 
+.burger-btn {
+  display: block;
+  height: $header-size;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: $header-size;
+  cursor: pointer;
+  z-index: 11;
+}
+
 // Burger
 .hamburger {
   background: white;
@@ -56,7 +67,7 @@ $header-size: 70px;
     width: $header-size * .7;
   }
 
-  &:hover {
+  .burger-btn:hover + & {
     div {
       margin: 12px #{$header-size * .15};
     }

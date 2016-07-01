@@ -1,9 +1,8 @@
 ---
 $title@: More than Front and Back its Agency vs. Product
 $slug: agencies-vs-product
-$subtitle: Understanding the difference in approach and opportunity for engineers and developers across Agency and Product settings.
-$dates:
-  published: 2015/04/27
+subtitle: Understanding the difference in approach and opportunity for engineers and developers across Agency and Product settings.
+$date: 2015/04/27
 excerpt: Agencies focused primarily on the development of websites and companies that revolve around the creation of an application or product think they are as different as night and day, but the overlap of skills and roles of engineers is more complex and interwoven than that.
 $coverimg: 2015/images/agencyvproduct/cover.gif
 $public: true

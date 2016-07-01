@@ -1,22 +1,18 @@
 // Legacy Import because styling blogposts sucks
-$elementMargin: 25px
-$blogPercent: 80%
-$blogMax: 600px
-
 article.blog_post
   // "block" level styling
   section
     overflow: hidden
     p, .highlight, table, ul, ol, h1, h2, h3
-      width: $blogPercent
-      max-width: $blogMax
-      margin: $elementMargin auto
+      width: $blog-width
+      max-width: $blog-max-width
+      margin: $blog-element-margin auto
       color: $color-brand-copy
       ul, ol
         margin: 0px
       li p
         width: auto
-        margin: 0px 0px $elementMargin/2
+        margin: 0px 0px $blog-element-margin/2
       .fade
         font-size: 0.8em
         line-height: 0.8em
@@ -26,11 +22,12 @@ article.blog_post
         font-family: $font-brand-primary
         font-size: 2em - (($i - 1)*0.4)
         color: $color-brand-primary
+        font-weight: $font-weight-normal
 
     img
       display: block
       width: auto
-      margin: $elementMargin auto
+      margin: $blog-element-margin auto
       max-width: 100%
       // This full hack centers despite the container
       &.full
@@ -50,8 +47,8 @@ article.blog_post
 
     ul, ol
       width: 70%
-      max-width: $blogMax - $elementMargin
-      padding-left: $elementMargin
+      max-width: $blog-max-width - $blog-element-margin
+      padding-left: $blog-element-margin
       li
         line-height: 1.6em
 
@@ -63,7 +60,7 @@ article.blog_post
       p
         font-size: 1.6em
         line-height: 1.7em
-        color: $color-brand-primary
+        color: darken($color-brand-primary, 20%)
         position: relative
         &:before
           content: '“ '
@@ -97,7 +94,7 @@ article.blog_post
       padding: 20px
       font-family: $font-brand-copy
       color: $color-brand-copy
-      margin: $elementMargin auto
+      margin: $blog-element-margin auto
 
 $numbers: ''
 @for $i from 1 through 100

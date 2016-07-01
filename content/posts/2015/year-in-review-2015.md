@@ -1,9 +1,8 @@
 ---
 $title@: William Anderson. Year in review 2015.
 $slug: year-in-review-2015
-$subtitle: Looking back at what I did and learned in 2015.
-$dates:
-  published: 2016/01/10
+subtitle: Looking back at what I did and learned in 2015.
+$date: 2016/01/10
 excerpt: 2015 was definitely one of the most productive years of my life. I learned a lot of lessons, switched jobs, and started teaching. Here are some facts and learnings.
 $coverimg: 2016/images/yir2015/cover.gif
 $public: true

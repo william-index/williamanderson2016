@@ -1,18 +1,18 @@
 ---
 $title@: Your Role as a Candidate
 $slug: your-role-as-a-candidate
-$subtitle: Understanding your own role in the job hunt, and advice for interviewing successfully
-$dates:
-  published: 2015/7/18
+subtitle: Understanding your own role in the job hunt, and advice for interviewing successfully
+$date: 2015/7/18
 excerpt: As professionals in software/web engineering, there are many expectations set about what we can do on a technical level. Your career however is more than just writing code, its about making decisions.
 $coverimg: 2015/images/roleascandidate/cover.gif
 $public: true
 ---
 
 ## Preamble
-> It is the candidates responsibility to find the right job, more-so than it is the company's responsibility to find the right candidate.
 
 Recently I had the privilege of undergoing a successful job search without the overhead of working full time in the background. This let me take time to really explore opportunities and take the temperature of the job market. I met with 19 different companies across a ton of industries. Some I went pretty far into the process before calling it off, others only went as far as informationals, and naturally a couple (3) didn't see me as the right fit for the role.
+
+> It is the candidates responsibility to find the right job, more-so than it is the company's responsibility to find the right candidate.
 
 Along the way I learned a ton about process, the stacks used at different companies, variations in management, and the hiring philosophies. The totality of which would probably be better for long form writing (like a book).
 

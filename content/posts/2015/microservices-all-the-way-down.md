@@ -1,9 +1,8 @@
 ---
 $title@: Microservices All the Way Down.
 $slug: microservices-all-the-way-down
-$subtitle: Exploring the relationship between nature and the architectures we invent.
-$dates:
-  published: 2016/02/15
+subtitle: Exploring the relationship between nature and the architectures we invent.
+$date: 2016/02/15
 excerpt: The Microservices pattern is intensely popular right now in software development, but in other fields it always has been. In a way its even been around in software for longer than we think too.
 $coverimg: 2016/images/microservices/cover.gif
 $public: true

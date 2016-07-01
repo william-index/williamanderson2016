@@ -1,0 +1,24 @@
+.blogpost-meta {
+  width: 80%;
+  padding: 5px 0;
+  max-width: $blog-max-width;
+  margin: 0 auto;
+  position: relative;
+  font-family: $font-brand-primary;
+  font-size: 14px;
+}
+
+.blogpost-meta__author {
+  color: $color-brand-secondary;
+
+  &:hover {
+    color: darken($color-brand-secondary, 20%);
+  }
+}
+
+.blogpost-meta__date {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: $color-brand-copy;
+}
