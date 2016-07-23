@@ -1,4 +1,13 @@
 projects:
+  - title: "Monster Hull"
+    description: "Shmup RPG built for Pico-8 using Lua"
+    image: monsterhull.png
+    date: 07/22/2016
+    machine_date: 2016/07/22
+    url: http://www.lexaloffle.com/bbs/?tid=3908
+    summary: Pixel art, Lua code, concepting and more was a blast, and Im so happy with how Monster Hull came out. I feel a Shmup/Monster Training RPG combo is quite unique. Promo Art by Yi-Ting Anderson. SFX+Music by Brendan Byrne.
+    featured: true
+
   - title: "2016 Personal website refresh"
     description: "Static site built in Grow.io"
     image: williamanderson2016.png
@@ -47,7 +56,6 @@ projects:
     machine_date: 2016/03/12
     url: http://codepen.io/william-index/full/PNGqyN/
     summary: Dragon Radar from Dragon Ball anime series. CSS Only.
-    featured: true
 
   - title: "Microservices All the Way Down"
     description: "Blogpost on Software Architecture"
