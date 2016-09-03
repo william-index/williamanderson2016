@@ -1,4 +1,22 @@
 projects:
+  - title: "Fermi Pasteladox"
+    description: "A procedural universe in Python"
+    image: fermipasteladox.png
+    date: 09/03/2016
+    machine_date: 2016/09/03
+    url: https://twitter.com/FermiPasteladox
+    summary: "A cure procedural universe in Python made for #fermiJam"
+    featured: true
+
+  - title: "Sea Bees"
+    description: "A virtual pet toy in collaboration with Xiwi Electronics"
+    image: seabees.jpg
+    date: 08/29/2016
+    machine_date: 2016/08/29
+    url: https://www.patreon.com/posts/sea-bees-6680627
+    summary: Arduino/C++ in collaboration with Xiwi Electronics
+    featured: true
+
   - title: "Monster Hull"
     description: "Shmup RPG built for Pico-8 using Lua"
     image: monsterhull.png
@@ -6,7 +24,6 @@ projects:
     machine_date: 2016/07/22
     url: http://www.lexaloffle.com/bbs/?tid=3908
     summary: Pixel art, Lua code, concepting and more was a blast, and Im so happy with how Monster Hull came out. I feel a Shmup/Monster Training RPG combo is quite unique. Promo Art by Yi-Ting Anderson. SFX+Music by Brendan Byrne.
-    featured: true
 
   - title: "2016 Personal website refresh"
     description: "Static site built in Grow.io"
@@ -39,7 +56,6 @@ projects:
     machine_date: 2016/04/09
     url: https://twitter.com/wizardgenerator
     summary: Python-based twitter bot that generates random wizard with color replacement as image patterns.
-    featured: true
 
   - title: "Fantastic Real Estate Bot"
     description: "Python Twitter bot"
