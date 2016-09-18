@@ -3,7 +3,7 @@ article.blog_post
   // "block" level styling
   section
     overflow: hidden
-    p, .highlight, table, ul, ol, h1, h2, h3
+    p, .highlight, table, ul, ol, h1, h2, h3, h4
       width: $blog-width
       max-width: $blog-max-width
       margin: $blog-element-margin auto
@@ -22,6 +22,11 @@ article.blog_post
         font-family: $font-brand-primary
         font-size: 2em - (($i - 1)*0.4)
         color: $color-brand-primary
+        font-weight: $font-weight-normal
+      h4
+        font-family: $font-brand-primary
+        font-size: 1rem
+        color: $color-brand-secondary
         font-weight: $font-weight-normal
 
     img
@@ -130,3 +135,10 @@ $numbers: ''
     line-height: 20px
     white-space: pre
     overflow: hidden
+
+  .plain .code &
+    background: lighten($color-brand-secondary, 50) !important
+    font-size: 14px
+
+    &::before
+      display: none !important
