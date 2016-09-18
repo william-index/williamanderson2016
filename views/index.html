@@ -13,8 +13,10 @@
       {% endif %}
     {% endfor %}
 
-    {% for post in all_projects.projects[0:14] %}
-      {% if not post.featured and not post.subdued %}
+    {% set show_count = 0 %}
+    {% for post in all_projects.projects %}
+      {% if not post.featured and not post.subdued and show_count <= 14 %}
+        {% set show_count = show_count + 1 %}
         {{ cards.feature_card(post) }}
       {% endif %}
     {% endfor %}

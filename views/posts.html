@@ -10,7 +10,11 @@
     <section>{{doc.html|safe}}</section>
   </article>
 
-  {% set next_doc = doc.next() %}
+  {% if doc.curated_next %}
+    {% set next_doc = g.doc(doc.curated_next) %}
+  {% else %}
+    {% set next_doc = doc.next() %}
+  {% endif %}
 
   {% if next_doc %}
     {{ ctas.box('Read post',next_doc.url.path,next_doc.title, 'Want to read more? Check out:') }}

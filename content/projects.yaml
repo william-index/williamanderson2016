@@ -1,11 +1,21 @@
 projects:
+  - title: "Successfully Completing Side-projects"
+    description: "Tips and strategy for completing side projects."
+    image: sideprojectsblog.png
+    date: 09/18/2016
+    machine_date: 2016/09/18
+    url: http://williamanderson.io/blog/successfully-completing-side-projects.html
+    blog: true
+    subdued: true
+    summary: It can be tough to work on your passions after hours, but its not impossible, I share some tips.
+
   - title: "Fermi Pasteladox"
     description: "A procedural universe in Python"
     image: fermipasteladox.png
     date: 09/03/2016
     machine_date: 2016/09/03
     url: https://twitter.com/FermiPasteladox
-    summary: "A cure procedural universe in Python made for #fermiJam"
+    summary: "A cute procedural universe in Python made for #fermiJam"
     featured: true
 
   - title: "Sea Bees"
