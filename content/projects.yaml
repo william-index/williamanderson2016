@@ -1,4 +1,12 @@
 projects:
+  - title: "Stardew Valley Fanart"
+    description: "Fanart Vector Illustration"
+    image: stardewfanart.png
+    date: 09/25/2016
+    machine_date: 2016/09/25
+    url: http://thewa.tumblr.com/post/150923064638/ive-been-playing-a-lot-of-stardew-valley-and-im
+    summary: Fanart of my character and items/etc from Stardew Valley
+
   - title: "Successfully Completing Side-projects"
     description: "Tips and strategy for completing side projects."
     image: sideprojectsblog.png
@@ -6,7 +14,6 @@ projects:
     machine_date: 2016/09/18
     url: http://williamanderson.io/blog/successfully-completing-side-projects.html
     blog: true
-    subdued: true
     summary: It can be tough to work on your passions after hours, but its not impossible, I share some tips.
 
   - title: "Fermi Pasteladox"
