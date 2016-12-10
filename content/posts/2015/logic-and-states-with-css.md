@@ -1,6 +1,7 @@
 ---
 $title@: Logic and State Management with just CSS
 $slug: logic-and-states-with-css
+$path: /blog/logic-and-states-with-css/
 subtitle: Building interfaces that involve logic with just CSS.
 $date: 2015/10/17
 excerpt: With a bit of planning and wizardry hover states and forms can handle basic logic in css. This tutorial explores some effective ways of harnessing that power and some aspirational examples.
