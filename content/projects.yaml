@@ -1,4 +1,13 @@
 projects:
+  - title: "Plantgod"
+    description: "Evolutionary Algorithm in Python"
+    image: eaplants.gif
+    date: 12/10/2016
+    machine_date: 2016/12/10
+    url: http://williamanderson.io/blog/ea-for-pixel-plants/
+    summary: Evolutionary Algorithm in Python
+    featured: true
+
   - title: "Stardew Valley Fanart"
     description: "Fanart Vector Illustration"
     image: stardewfanart.png
@@ -32,7 +41,6 @@ projects:
     machine_date: 2016/08/29
     url: https://www.patreon.com/posts/sea-bees-6680627
     summary: Arduino/C++ in collaboration with Xiwi Electronics
-    featured: true
 
   - title: "Monster Hull"
     description: "Shmup RPG built for Pico-8 using Lua"
