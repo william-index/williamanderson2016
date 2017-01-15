@@ -1,4 +1,12 @@
 projects:
+  - title: "Sway"
+    description: "Hackathon | Deep Learning/Chrome Extension"
+    image: sway.jpg
+    date: 01/14/2017
+    machine_date: 2017/01/14
+    url: https://bitbucket.org/william-index/not-flat-bias-extension/overview
+    summary: Chrome extension for checking bias of webpages and offering alternatives.
+
   - title: "Plantgod"
     description: "Evolutionary Algorithm in Python"
     image: eaplants.gif
