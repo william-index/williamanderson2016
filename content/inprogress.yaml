@@ -1,0 +1,14 @@
+projects:
+  - title: "(Kaiju Extension)"
+    description: "Chrome Extension"
+    image: cute_kaiju_vector.gif
+    url: https://twitter.com/thewaanderson/status/820841985032548352
+    summary: Some form of large monster/Kaiju raising game as a chrome extension.
+    cta: View Dev Feed
+
+  - title: "Blacklight Archeologist"
+    description: "Generative Art Bot"
+    image: blacklight.gif
+    url: https://github.com/william-index/black-light-archeologist
+    summary: Generating fossil skeletons in python and posting as a twitter bot.
+    cta: View Repo

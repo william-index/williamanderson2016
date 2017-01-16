@@ -1,0 +1,13 @@
+{% extends "/views/base.html" %}
+
+{% block main %}
+  {{ headers.page('In Development', 'These projects are under active development.') }}
+
+  {# Lists Featured Projects #}
+  {% set all_projects = g.yaml('/content/inprogress.yaml') %}
+  <section class='feature-card-wrapper'>
+    {% for post in all_projects.projects %}
+      {{ cards.inprogress_card(post) }}
+    {% endfor %}
+  </section>
+{% endblock %}

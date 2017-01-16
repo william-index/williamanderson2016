@@ -1,0 +1,46 @@
+.inprogress-card {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid $color-brand-light;
+  display: flex;
+}
+
+.inprogress-card__caption {
+  text-align: left;
+  padding: 0 0 0 20px;
+  max-width: 600px;
+  width: 80%;
+}
+
+.inprogress-card__img-wrap {
+  display: block;
+  width: 20%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.inprogress-card__title {
+  color: darken($color-brand-primary, 20%);
+  font-family: $font-brand-primary;
+  font-size: nth($font-sizes-item-title, 2);
+  font-weight: $font-weight-thin;
+  padding: 0 0 $feature-card-padding/2;
+}
+
+.inprogress-card__sub {
+  color: $color-brand-copy;
+  font-family: $font-brand-primary;
+  font-weight: $font-weight-thin;
+  font-size: 12px;
+}
+
+.inprogress-card__desc {
+  color: $color-brand-copy;
+  font-family: $font-brand-primary;
+  font-weight: $font-weight-thin;
+  padding: $feature-card-padding 0 $feature-card-padding;
+}
+
+.inprogress-card__btn {
+  float: left;
+}

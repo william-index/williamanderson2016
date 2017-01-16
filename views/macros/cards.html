@@ -12,3 +12,19 @@
     </figure>
   </a>
 {% endmacro %}
+
+{% macro inprogress_card(post, feature) %}
+  <figure class="inprogress-card">
+    <div class='inprogress-card__img-wrap'
+        style="background-image: url('/static/images/inprogress/{{post.image}}');">
+    </div>
+    <figcaption class="inprogress-card__caption">
+      <h2 class='inprogress-card__title'>{{post.title}}</h2>
+      <p class='inprogress-card__sub'>{{post.description}}</p>
+      <p class='inprogress-card__desc'>{{post.summary}}</p>
+      {% if post.cta %}
+        <a href='{{post.url}}' target="_blank" class="inprogress-card__btn btn" target='_blank'>{{post.cta}}</a>
+      {% endif %}
+    </figcaption>
+  </figure>
+{% endmacro %}
