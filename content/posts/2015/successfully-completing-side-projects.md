@@ -1,12 +1,13 @@
 ---
 $title@: Successfully Completing Side-projects
 $slug: successfully-completing-side-projects
+$path: /blog/successfully-completing-side-projects/
 subtitle: ""
 curated_next: '/content/posts/2015/microservices-all-the-way-down.md'
 $date: 2016/09/18
 excerpt: It can be tough to work on your passions after hours, but its not impossible, I share some tips.
 $cover_img: 2015/images/tumblr_themes/cover.gif
-$public: false
+$public: true
 ---
 ## Too Many Failures
 Too many side projects from my past self, from friends, from colleagues and strangers on the web fall to the side, or wither away. Some burn so brightly that they expire their energy and momentum before they even begin. Other times their potential is so massive that the shadow eclipses motivation suffocating any hope for completion.
