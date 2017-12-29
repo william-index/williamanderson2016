@@ -1,0 +1,93 @@
+{
+  "/content/pages/blog.md": [
+    "/content/posts/2015/agencies-vs-product.md",
+    "/content/posts/2015/animation-timelines-with-sass.md",
+    "/content/posts/2015/art-directing-robots.md",
+    "/content/posts/2015/ea-for-pixel-plants.md",
+    "/content/posts/2015/logic-and-states-with-css.md",
+    "/content/posts/2015/microservices-all-the-way-down.md",
+    "/content/posts/2015/speaking-to-machines.md",
+    "/content/posts/2015/successfully-completing-side-projects.md",
+    "/content/posts/2015/teams-for-tumblr-themes.md",
+    "/content/posts/2015/year-in-review-2015.md",
+    "/content/posts/2015/your-role-as-a-candidate.md",
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/pages/feed.md": [
+    "/content/projects.yaml"
+  ],
+  "/content/pages/index.md": [
+    "/content/posts/2015/agencies-vs-product.md",
+    "/content/posts/2015/animation-timelines-with-sass.md",
+    "/content/posts/2015/art-directing-robots.md",
+    "/content/posts/2015/ea-for-pixel-plants.md",
+    "/content/posts/2015/logic-and-states-with-css.md",
+    "/content/posts/2015/microservices-all-the-way-down.md",
+    "/content/posts/2015/speaking-to-machines.md",
+    "/content/posts/2015/successfully-completing-side-projects.md",
+    "/content/posts/2015/teams-for-tumblr-themes.md",
+    "/content/posts/2015/year-in-review-2015.md",
+    "/content/posts/2015/your-role-as-a-candidate.md",
+    "/content/projects.yaml",
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/pages/inprogress.md": [
+    "/content/inprogress.yaml",
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/pages/projects.md": [
+    "/content/projects.yaml",
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/agencies-vs-product.md": [
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/animation-timelines-with-sass.md": [
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/art-directing-robots.md": [
+    "/content/posts/2015/successfully-completing-side-projects.md",
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/ea-for-pixel-plants.md": [
+    "/content/posts/2015/logic-and-states-with-css.md",
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/logic-and-states-with-css.md": [
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/microservices-all-the-way-down.md": [
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/speaking-to-machines.md": [
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/successfully-completing-side-projects.md": [
+    "/content/posts/2015/microservices-all-the-way-down.md",
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/teams-for-tumblr-themes.md": [
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/year-in-review-2015.md": [
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ],
+  "/content/posts/2015/your-role-as-a-candidate.md": [
+    "/dist/main.min.css",
+    "/source/images/icon.png"
+  ]
+}

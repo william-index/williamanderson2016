@@ -1,4 +1,29 @@
 projects:
+  - title: "Felt Stegosauruses"
+    description: "Sewn felt Stegosauruses from my own pattern."
+    image: feltstegos.jpg
+    date: 12/10/2017
+    machine_date: 2017/12/10
+    url: https://twitter.com/thewaanderson/status/946877657014243329
+    summary: Some cute sewn felt Stegosauruses that I did free-style in terms of pattern.
+
+  - title: "Retro-tech Space Princess Pogs"
+    description: "Illustration and production of pogs."
+    image: retrotechspaceprincesspogs.jpg
+    date: 05/14/2017
+    machine_date: 2017/05/14
+    url: https://twitter.com/thewaanderson/status/863935970315571200
+    summary: Illustrations and production of pogs featuring space princesses that rule over different regions of retro technology... in space.
+    featured: true
+
+  - title: "Markov Fun"
+    description: "Basic Markov Chains for making art."
+    image: markovfun.gif
+    date: 05/10/2017
+    machine_date: 2017/05/10
+    url: https://magenta.as/using-machine-learning-to-make-art-84df7d3bb911
+    summary: Using markov chains to generate art.
+
   - title: "Sway"
     description: "Hackathon | Deep Learning/Chrome Extension"
     image: sway.jpg
@@ -16,14 +41,6 @@ projects:
     summary: Evolutionary Algorithm in Python
     featured: true
 
-  - title: "Stardew Valley Fanart"
-    description: "Fanart Vector Illustration"
-    image: stardewfanart.png
-    date: 09/25/2016
-    machine_date: 2016/09/25
-    url: http://thewa.tumblr.com/post/150923064638/ive-been-playing-a-lot-of-stardew-valley-and-im
-    summary: Fanart of my character and items/etc from Stardew Valley
-
   - title: "Successfully Completing Side-projects"
     description: "Tips and strategy for completing side projects."
     image: sideprojectsblog.png
@@ -40,7 +57,6 @@ projects:
     machine_date: 2016/09/03
     url: https://twitter.com/FermiPasteladox
     summary: "A cute procedural universe in Python made for #fermiJam"
-    featured: true
 
   - title: "Sea Bees"
     description: "A virtual pet toy in collaboration with Xiwi Electronics"
@@ -120,7 +136,7 @@ projects:
     image: mascotchara.png
     date: 01/30/2016
     machine_date: 2016/01/30
-    url: http://thewa.tumblr.com/post/138323546238/ive-been-wanting-to-make-myself-a-mascot
+    url: http://thewaanderson.tumblr.com/post/138323546238/ive-been-wanting-to-make-myself-a-mascot
     summary: I've been wanting to make myself a mascot character along these lines for a while. Been playing a lot of Kirby's Dreamland lately, and the oldschool Gameboy colors were inspiring, so I decided to step up and make this. Its me! Check out that patterned shirt! Its a hippo type thing?
 
   - title: "Vapor Vase"
@@ -136,7 +152,7 @@ projects:
     image: exobotany_pixelart.png
     date: 01/18/2016
     machine_date: 2016/01/18
-    url: http://thewa.tumblr.com/post/137574290383/weekend-micro-project-just-for-fun
+    url: http://thewaanderson.tumblr.com/post/137574290383/weekend-micro-project-just-for-fun
     summary: Plants from the furthest reaches of retro blacklight-pixel space.
 
   - title: "2015 Year in Review"
@@ -177,7 +193,7 @@ projects:
     image: start98.jpg
     date: 11/08/2015
     machine_date: 2015/11/08
-    url: http://thewa.tumblr.com/post/132830546243/my-first-real-painting-kinda-titled-start-98
+    url: http://thewaanderson.tumblr.com/post/132830546243/my-first-real-painting-kinda-titled-start-98
     summary: My first real painting so to speak, acrylic on wood with paper mache and shadows.
 
   - title: "Bat Cannon"
@@ -252,7 +268,7 @@ projects:
     image: callie_splatoon.png
     date: 08/15/2015
     machine_date: 2015/08/15
-    url: http://thewa.tumblr.com/post/126718721058/callie-from-splatoon
+    url: http://thewaanderson.tumblr.com/post/126718721058/callie-from-splatoon
 
   - title: "CSS Stepped 8bit Animation"
     description: "CSS experiment"

@@ -17,7 +17,7 @@ $feature-card-margin: 0px;
 .feature-card {
   background: white;
   border: 1px solid $color-brand-light;
-  cursor: pointer;
+  cursor: pointer !important;
   margin: #{$feature-card-margin * 2} $feature-card-margin 0;
   padding: $feature-card-padding * .5;
   transition: background .3s;
