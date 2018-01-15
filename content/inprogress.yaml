@@ -1,9 +1,4 @@
 projects:
-  - title: "Stegosaurs"
-    description: "Native Desktop click farm app."
-    image: stegosaurs_screen.png
-    summary: Nearing completion of development for this, just need to handle sound.
-
   - title: "(Kaiju Extension)"
     description: "Chrome Extension"
     image: cute_kaiju_vector.gif

@@ -1,4 +1,13 @@
 projects:
+  - title: "Stegosaurs"
+    description: "Native OSX/Windows app, where you click Stegosaurs to get hearts and more stegosaurs."
+    image: stegosaurs.jpg
+    date: 1/15/2018
+    machine_date: 2018/1/15
+    url: https://thewilliamanderson.itch.io/stegosaurs
+    summary: An adorable desktop application for OSX and Windows where you can click and collect cute stegosauruses known as Stegosaurs.
+    featured: true
+
   - title: "Felt Stegosauruses"
     description: "Sewn felt Stegosauruses from my own pattern."
     image: feltstegos.jpg
@@ -39,7 +48,6 @@ projects:
     machine_date: 2016/12/10
     url: http://williamanderson.io/blog/ea-for-pixel-plants/
     summary: Evolutionary Algorithm in Python
-    featured: true
 
   - title: "Successfully Completing Side-projects"
     description: "Tips and strategy for completing side projects."
