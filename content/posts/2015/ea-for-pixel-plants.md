@@ -7,6 +7,7 @@ curated_next: '/content/posts/2015/logic-and-states-with-css.md'
 excerpt: EAs are incredibly powerful and can be implemented in very simple and straight forward ways or in manners that are quite complex, for data science and for art.
 $cover_img: 2015/images/tumblr_themes/cover.gif
 $public: true
+feature: true
 ---
 <img src="/static/images/blog/pixelplants/cover.png" class="full" />
 

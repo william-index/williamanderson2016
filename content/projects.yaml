@@ -23,7 +23,6 @@ projects:
     machine_date: 2017/05/14
     url: https://twitter.com/thewaanderson/status/863935970315571200
     summary: Illustrations and production of pogs featuring space princesses that rule over different regions of retro technology... in space.
-    featured: true
 
   - title: "Markov Fun"
     description: "Basic Markov Chains for making art."

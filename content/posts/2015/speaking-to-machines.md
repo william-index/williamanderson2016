@@ -6,6 +6,7 @@ $date: 2015/08/28
 excerpt: We tend to be quite removed from how code actually works beyond layers of abstraction. Here we take a look at writing collision detection with zeros and ones.
 $cover_img: 2015/images/machine_code/cover.gif
 $public: true
+feature: true
 ---
 <img src="/static/images/blog/machine_code/banner.png" class="full" />
 ## Degrees of Removal

@@ -13,6 +13,17 @@
       {% endif %}
     {% endfor %}
 
+    {% set posts = g.docs('posts', order_by='date') | reverse() %}
+    <div class='feature-card'>
+      {{ headers.midpage('Recent posts') }}
+
+      {% for post in posts %}
+        {% if post.feature %}
+          {{ postparts.post_stub(post) }}
+        {% endif %}
+      {% endfor %}
+    </div>
+
     {% set show_count = 0 %}
     {% for post in all_projects.projects %}
       {% if not post.featured and not post.subdued and show_count <= 14 %}
@@ -22,18 +33,4 @@
     {% endfor %}
   </section>
   {{ ctas.box('See all projects','/projects/') }}
-
-  {{ headers.midpage('Recent posts') }}
-
-  {% set posts = g.docs('posts', order_by='date') %}
-  {% set postsc = 0 %}
-  <section class='blogproll-wrapper'>
-    {% for post in posts | reverse() %}
-      {% set postsc = postsc + 1 %}
-      {% if postsc <= 3 %}
-        {{ postparts.post_stub(post) }}
-      {% endif %}
-    {% endfor %}
-  </section>
-  {{ ctas.box('See all posts','/blog/') }}
 {% endblock %}
