@@ -1,4 +1,13 @@
 projects:
+  - title: "Nokia Moss"
+    description: "Teensy and Nokia screen combined to make a retro monster gardening experience."
+    image: nokiaMoss.gif
+    date: 3/30/2018
+    machine_date: 2018/3/30
+    url: https://thewilliamanderson.itch.io/nokia-moss
+    summary: A virtual monster-garden game built using a Teensy and an up-cycled Nokia phone screen.
+    featured: true
+
   - title: "Stegosaurs"
     description: "Native OSX/Windows app, where you click Stegosaurs to get hearts and more stegosaurs."
     image: stegosaurs.jpg
@@ -23,7 +32,7 @@ projects:
     machine_date: 2017/05/14
     url: https://twitter.com/thewaanderson/status/863935970315571200
     summary: Illustrations and production of pogs featuring space princesses that rule over different regions of retro technology... in space.
-    featured: true
+    featured: false
 
   - title: "Markov Fun"
     description: "Basic Markov Chains for making art."
