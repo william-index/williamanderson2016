@@ -1,0 +1,40 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /
+  static_files: build/index.html
+  upload: build/index.html
+
+- url: /(.*)
+  static_files: build/\1
+  upload: build/(.*)
+
+skip_files:
+#File Types
+- ^(.*/)?#.*#
+- ^(.*/)?.*~
+- ^(.*/)?.*\.csv
+- ^(.*/)?.*\.p12
+- ^(.*/)?.*\.pem
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*\.scss
+- ^(.*/)?.*\.sql
+- ^(.*/)?.*\.soy
+- ^(.*/)?.*\.log
+- ^(.*/)?.*/RCS/.*
+- ^(.*/)?\..*
+- ^(.*/)?\.DS_Store
+- ^(.*/)?\.coveragerc
+- ^(.*/)?\.stylelintrc
+
+#Root Directory
+- ^libs/PIL/.*
+- ^apptests/.*
+- ^tests/.*
+- ^node_modules/.*
+- ^\.git/.*
+- package.json
+- README.md
+- Makefile

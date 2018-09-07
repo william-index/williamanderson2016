@@ -1,6 +1,6 @@
 projects:
   - title: "Nokia Moss"
-    description: "Teensy and Nokia screen combined to make a retro monster gardening experience."
+    description: "Teensy and a Nokia screen combined to make a retro monster gardening experience."
     image: nokiaMoss.gif
     date: 3/30/2018
     machine_date: 2018/3/30
@@ -320,7 +320,7 @@ projects:
     image: captainslog.jpg
     date: 01/08/2014
     machine_date: 2014/01/08
-    url: http://captainsloggame.com/
+    url: http://captainslog.williamanderson.io/
 
   - title: "WEAMON: Weather Monsters"
     description: "iOS Games (Obj-C)"

@@ -31,7 +31,7 @@ extensions:
   jinja2:
   - extensions.datetimeformat.Datetimeformat
 
-deployments:
-  default:
-    destination: local
-    out_dir: my-codelab-launch/
+# deployments:
+#   default:
+#     destination: local
+#     out_dir: my-codelab-launch/
