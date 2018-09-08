@@ -323,7 +323,7 @@ projects:
     url: http://captainslog.williamanderson.io/
 
   - title: "WEAMON: Weather Monsters"
-    description: "iOS Games (Obj-C)"
+    description: "iOS Games (Obj-C) based on geo-location and weather"
     image: weamon.jpg
     date: 12/12/2013
     machine_date: 2015/12/12
