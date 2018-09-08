@@ -327,7 +327,7 @@ projects:
     image: weamon.jpg
     date: 12/12/2013
     machine_date: 2015/12/12
-    url: http://www.weamon.com/
+    url: http://weamon.williamanderson.io/
 
   - title: "Pettrip"
     description: "iOS Games (Obj-C)"
