@@ -63,7 +63,7 @@ projects:
     image: eaplants.gif
     date: 12/10/2016
     machine_date: 2016/12/10
-    url: http://williamanderson.io/blog/ea-for-pixel-plants/
+    url: http://williamanderson.io/blog/ea-for-pixel-plants/index.html
     summary: Evolutionary Algorithm in Python
 
   - title: "Successfully Completing Side-projects"
@@ -71,7 +71,7 @@ projects:
     image: sideprojectsblog.png
     date: 09/18/2016
     machine_date: 2016/09/18
-    url: http://williamanderson.io/blog/successfully-completing-side-projects/
+    url: http://williamanderson.io/blog/successfully-completing-side-projects/index.html
     blog: true
     summary: It can be tough to work on your passions after hours, but its not impossible, I share some tips.
 
@@ -152,7 +152,7 @@ projects:
     image: microservices.png
     date: 02/15/2016
     machine_date: 2016/02/15
-    url: http://williamanderson.io/blog/microservices-all-the-way-down/
+    url: http://williamanderson.io/blog/microservices-all-the-way-down/index.html
     blog: true
     summary: The Microservices pattern is intensely popular right now in software development, but in other fields it always has been. In a way its even been around in software for longer than we think too.
 
@@ -185,7 +185,7 @@ projects:
     image: yir2015.png
     date: 01/10/2016
     machine_date: 2016/01/10
-    url: http://williamanderson.io/blog/year-in-review-2015/
+    url: http://williamanderson.io/blog/year-in-review-2015/index.html
     blog: true
     summary: My look back at what I did during 2015.
 
@@ -249,7 +249,7 @@ projects:
     image: css_logic.jpg
     date: 10/17/2015
     machine_date: 2015/10/17
-    url: http://williamanderson.io/blog/logic-and-states-with-css/
+    url: http://williamanderson.io/blog/logic-and-states-with-css/index.html
     blog: true
 
   - title: "CSS-only Calculator"
@@ -278,7 +278,7 @@ projects:
     image: machinecode.jpg
     date: 08/28/2015
     machine_date: 2015/08/28
-    url: http://williamanderson.io/blog/speaking-to-machines/
+    url: http://williamanderson.io/blog/speaking-to-machines/index.html
     blog: true
 
   - title: "CSS-only Connect 4"
