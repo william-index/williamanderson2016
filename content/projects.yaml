@@ -1,4 +1,12 @@
 projects:
+  - title: "Stegosaur Block Print"
+    description: "Block print of a cute stegosaurus I drew."
+    image: block_print_stego.jpg
+    date: 9/5/2018
+    machine_date: 2018/9/5
+    url: https://twitter.com/TheWAAnderson/status/1038917498140323840
+    summary: Soft block, block carving and printing on fabric and paper of a cute stegosaurus.
+
   - title: "Nokia Moss"
     description: "Teensy and a Nokia screen combined to make a retro monster gardening experience."
     image: nokiaMoss.gif
