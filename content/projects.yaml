@@ -1,4 +1,13 @@
 projects:
+  - title: "Lavender Woods"
+    description: "Action Adventure meets match-3 in this adorable game for TIC-80."
+    image: lavender_woods.jpg
+    date: 12/16/2018
+    machine_date: 2018/12/16
+    url: https://thewilliamanderson.itch.io/lavender-woods
+    summary: Help Monnet find her way home after getting lost in Lavender Woods. A game for TIC-80.
+    featured: true
+
   - title: "Stegosaur Block Print"
     description: "Block print of a cute stegosaurus I drew."
     image: block_print_stego.jpg
@@ -14,7 +23,6 @@ projects:
     machine_date: 2018/3/30
     url: https://thewilliamanderson.itch.io/nokia-moss
     summary: A virtual monster-garden game built using a Teensy and an up-cycled Nokia phone screen.
-    featured: true
 
   - title: "Stegosaurs"
     description: "Native OSX/Windows app, where you click Stegosaurs to get hearts and more stegosaurs."
